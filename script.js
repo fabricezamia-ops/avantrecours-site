@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---- FORMULAIRE DE CONTACT (Formspree) ---- */
   // Remplace XXXXXXXX par ton ID Formspree
-  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/XXXXXXXX';
+  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/maqknvkr';
 
   const submitBtn = document.getElementById('submitBtn');
   const formSuccess = document.getElementById('formSuccess');
