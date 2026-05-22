@@ -450,6 +450,58 @@ h3 { font-size: 1.35rem; font-weight: 600; margin-bottom: 0.75rem; }
   font-size: 0.85rem;
   color: var(--muted);
 }
+.card-subtitle {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--primary-2);
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+.card-recommend {
+  font-size: 0.88rem;
+  color: var(--primary);
+  font-weight: 500;
+  background: var(--primary-light);
+  border-left: 3px solid var(--primary-2);
+  padding: 0.6rem 0.85rem;
+  border-radius: 0 8px 8px 0;
+  margin: 0.75rem 0;
+}
+.options-label {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--primary);
+  margin: 2.5rem 0 1rem;
+}
+.options-bonus {
+  margin-top: 2.5rem;
+  background: var(--primary);
+  border-radius: var(--radius-lg);
+  padding: 2rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.options-bonus p {
+  color: rgba(255,255,255,0.85);
+  font-size: 1rem;
+  margin: 0;
+  max-width: 60ch;
+}
+.options-bonus strong { color: #fff; }
+.options-bonus .btn-primary {
+  background: #fff;
+  color: var(--primary);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.options-bonus .btn-primary:hover {
+  background: var(--bg);
+  box-shadow: 0 4px 16px rgba(255,255,255,0.2);
+}
 .option-price {
   font-family: var(--font-display);
   font-size: 1.1rem;
