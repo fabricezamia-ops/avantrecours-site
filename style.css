@@ -450,6 +450,14 @@ h3 { font-size: 1.35rem; font-weight: 600; margin-bottom: 0.75rem; }
   font-size: 0.85rem;
   color: var(--muted);
 }
+.list-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--primary-2);
+  margin: 1rem 0 0.4rem;
+}
 .card-subtitle {
   font-size: 0.88rem;
   font-weight: 600;
