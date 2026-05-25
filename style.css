@@ -450,6 +450,33 @@ h3 { font-size: 1.35rem; font-weight: 600; margin-bottom: 0.75rem; }
   font-size: 0.85rem;
   color: var(--muted);
 }
+.card-sessions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary);
+  background: var(--primary-light);
+  border: 1px solid var(--line);
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  margin-bottom: 0.85rem;
+}
+.card-sessions::before {
+  content: '🕐';
+  font-size: 0.75rem;
+}
+.option-sessions {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--primary-2);
+  background: var(--primary-light);
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  margin-bottom: 0.2rem;
+}
 .list-label {
   font-size: 0.82rem;
   font-weight: 700;
