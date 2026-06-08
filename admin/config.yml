@@ -1,0 +1,85 @@
+backend:
+  name: github
+  repo: fabricezamia-ops/avant-recours  # à adapter : TON_USERNAME/NOM_DU_REPO
+  branch: main
+
+media_folder: "images/blog"
+public_folder: "/images/blog"
+
+# Pas de login Netlify Identity — authentification GitHub directe
+local_backend: false
+
+collections:
+  - name: "articles"
+    label: "Articles du blog"
+    folder: "blog/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Titre H1 (affiché sur la page)"
+        name: "titre_h1"
+        widget: "string"
+        hint: "Titre principal de l'article. Phrase directe, sans point final."
+
+      - label: "Titre SEO (balise title)"
+        name: "titre_seo"
+        widget: "string"
+        hint: "Version optimisée pour Google. 55-65 caractères max."
+
+      - label: "Slug (URL)"
+        name: "slug"
+        widget: "string"
+        hint: "Ex : que-faire-apres-une-convocation — sans accents, tirets uniquement"
+        pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', "Minuscules, chiffres et tirets uniquement"]
+
+      - label: "Meta description"
+        name: "meta_description"
+        widget: "text"
+        hint: "Description Google. 150-160 caractères max."
+
+      - label: "Chapeau (intro visible sous le titre)"
+        name: "chapeau"
+        widget: "text"
+        hint: "1-2 phrases. Résume l'essentiel. Pas de jargon."
+
+      - label: "Catégorie"
+        name: "categorie"
+        widget: "select"
+        options:
+          - { label: "Convocation & entretien RH", value: "convocation" }
+          - { label: "Rupture conventionnelle", value: "rupture" }
+          - { label: "Harcèlement moral", value: "harcelement" }
+          - { label: "Licenciement", value: "licenciement" }
+          - { label: "Conseils pratiques", value: "conseils" }
+
+      - label: "Date de publication"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        date_format: "DD/MM/YYYY"
+        time_format: false
+
+      - label: "Temps de lecture (minutes)"
+        name: "temps_lecture"
+        widget: "number"
+        default: 5
+        value_type: "int"
+        min: 1
+        max: 30
+
+      - label: "Article à la une"
+        name: "featured"
+        widget: "boolean"
+        default: false
+        hint: "Cocher pour afficher cet article en premier sur la page blog."
+
+      - label: "Contenu de l'article"
+        name: "body"
+        widget: "markdown"
+        hint: "Utilise les styles H2 pour les sections principales, H3 pour les sous-sections."
+
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        hint: "Ex : droit du travail, convocation, entretien RH"
+        default: []
