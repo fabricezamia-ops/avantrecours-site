@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: fabricezamia-ops/avant-recours  # à adapter : TON_USERNAME/NOM_DU_REPO
+  repo: fabricezamia-ops/avantrecours-site  # à adapter : TON_USERNAME/NOM_DU_REPO
   branch: main
 
 media_folder: "images/blog"
