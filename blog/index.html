@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Avant Recours — Conseils pour salariés en difficulté au travail</title>
+  <meta name="description" content="Articles pratiques sur le droit du travail, les convocations RH, la rupture conventionnelle et le harcèlement moral. Par Fabrice Zamia — Avant Recours." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.avantrecours.fr/blog/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.avantrecours.fr/blog/" />
+  <meta property="og:title" content="Blog Avant Recours — Conseils pour salariés en difficulté" />
+  <meta property="og:description" content="Articles pratiques sur le droit du travail, les entretiens RH, la rupture conventionnelle et le harcèlement moral." />
+  <meta property="og:locale" content="fr_FR" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Blog Avant Recours",
+    "description": "Conseils pratiques pour les salariés en situation professionnelle difficile.",
+    "url": "https://www.avantrecours.fr/blog/",
+    "publisher": {
+      "@type": "Person",
+      "name": "Fabrice Zamia"
+    }
+  }
+  </script>
+
+  <link rel="icon" type="image/png" href="../avant-recours-favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    /* ---- BLOG INDEX ---- */
+    .blog-hero {
+      background: linear-gradient(180deg, #f4f7fb 0%, #ffffff 100%);
+      padding: 5rem 0 3.5rem;
+      border-bottom: 1px solid var(--line-soft);
+    }
+    .blog-hero .eyebrow { margin-bottom: 0.75rem; }
+    .blog-hero h1 { font-style: italic; margin-bottom: 1rem; max-width: 18ch; }
+    .blog-hero p { color: var(--muted); font-size: 1.05rem; max-width: 55ch; }
+
+    .blog-filters {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin: 2.5rem 0 0;
+    }
+    .filter-btn {
+      padding: 0.45rem 1rem;
+      border-radius: 999px;
+      border: 1.5px solid var(--line);
+      background: var(--surface);
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    .blog-section { padding: 4rem 0 6rem; }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.75rem;
+      margin-top: 2.5rem;
+    }
+
+    .article-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+      transition: box-shadow .25s, transform .25s;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: inherit;
+    }
+    .article-card:hover {
+      box-shadow: var(--shadow);
+      transform: translateY(-4px);
+      color: inherit;
+    }
+    .article-card-top {
+      height: 6px;
+      background: linear-gradient(90deg, var(--primary), var(--primary-2), var(--accent));
+    }
+    .article-card-body {
+      padding: 1.75rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    .article-cat {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--primary-2);
+      background: var(--primary-light);
+      padding: 0.25rem 0.65rem;
+      border-radius: 999px;
+    }
+    .article-date {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+    .article-card h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+      color: var(--primary);
+    }
+    .article-card p {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.6;
+      flex: 1;
+      margin-bottom: 1.25rem;
+    }
+    .article-read-more {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--primary-2);
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin-top: auto;
+    }
+    .article-read-more::after {
+      content: '→';
+      transition: transform .2s;
+    }
+    .article-card:hover .article-read-more::after {
+      transform: translateX(4px);
+    }
+
+    /* Featured article */
+    .article-card.featured {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: 6px 1fr;
+    }
+    .article-card.featured .article-card-top {
+      height: auto;
+      width: 6px;
+      background: linear-gradient(180deg, var(--primary), var(--primary-2), var(--accent));
+    }
+    .article-card.featured .article-card-body {
+      padding: 2.25rem 2.5rem;
+    }
+    .article-card.featured h2 {
+      font-size: 1.9rem;
+      max-width: 28ch;
+    }
+    .article-card.featured p {
+      max-width: 60ch;
+      font-size: 0.95rem;
+    }
+
+    /* Empty state */
+    .blog-empty {
+      text-align: center;
+      padding: 4rem 2rem;
+      color: var(--muted);
+      border: 1.5px dashed var(--line);
+      border-radius: var(--radius-lg);
+      margin-top: 2.5rem;
+    }
+    .blog-empty p { margin: 0; font-size: 0.95rem; }
+
+    /* CTA newsletter */
+    .blog-cta {
+      margin-top: 4rem;
+      background: var(--primary);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .blog-cta h3 {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+    .blog-cta p {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.95rem;
+      margin: 0;
+    }
+    .blog-cta .btn-primary {
+      background: #fff;
+      color: var(--primary);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .blog-cta .btn-primary:hover {
+      background: var(--bg);
+      color: var(--primary);
+    }
+
+    @media (max-width: 1020px) {
+      .blog-grid { grid-template-columns: repeat(2, 1fr); }
+      .article-card.featured { grid-column: 1 / -1; }
+    }
+    @media (max-width: 768px) {
+      .blog-grid { grid-template-columns: 1fr; }
+      .article-card.featured {
+        grid-template-columns: 1fr;
+      }
+      .article-card.featured .article-card-top {
+        height: 6px;
+        width: auto;
+      }
+      .article-card.featured .article-card-body { padding: 1.75rem; }
+      .article-card.featured h2 { font-size: 1.4rem; }
+      .blog-cta { padding: 1.75rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a href="../index.html" class="brand">
+        <div class="brand-mark">AR</div>
+        <div>
+          <strong>Avant Recours</strong>
+          <small>Le premier réflexe avant d'aller plus loin</small>
+        </div>
+      </a>
+      <nav class="nav-menu" id="navMenu" aria-label="Navigation principale">
+        <a href="../index.html#prestations">Prestations</a>
+        <a href="../index.html#methode">Méthode</a>
+        <a href="../index.html#apropos">À propos</a>
+        <a href="../index.html#faq">FAQ</a>
+        <a href="./index.html" style="color: var(--primary); font-weight:600;">Blog</a>
+        <a href="https://calendly.com/fabrice-zamia/30min" target="_blank" rel="noopener" class="nav-cta">Prendre rendez-vous</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO BLOG -->
+    <section class="blog-hero">
+      <div class="container">
+        <span class="eyebrow">Ressources & conseils</span>
+        <h1>Le blog Avant Recours</h1>
+        <p>Articles pratiques sur les droits des salariés, les procédures RH, la rupture conventionnelle et la préparation aux situations difficiles au travail.</p>
+
+        <div class="blog-filters" id="blogFilters">
+          <button class="filter-btn active" data-filter="all">Tous les articles</button>
+          <button class="filter-btn" data-filter="convocation">Convocation &amp; entretien RH</button>
+          <button class="filter-btn" data-filter="rupture">Rupture conventionnelle</button>
+          <button class="filter-btn" data-filter="harcelement">Harcèlement moral</button>
+          <button class="filter-btn" data-filter="licenciement">Licenciement</button>
+          <button class="filter-btn" data-filter="conseils">Conseils pratiques</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARTICLES -->
+    <section class="blog-section">
+      <div class="container">
+        <div class="blog-grid" id="blogGrid">
+          <!-- Les articles sont injectés ici dynamiquement -->
+          <!-- Exemple d'article vide au démarrage -->
+          <div class="blog-empty" id="blogEmpty">
+            <p>Les premiers articles arrivent bientôt.</p>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="blog-cta">
+          <div>
+            <h3>Votre situation nécessite un échange direct ?</h3>
+            <p>Le premier rendez-vous est gratuit, confidentiel et sans engagement.</p>
+          </div>
+          <a href="https://calendly.com/fabrice-zamia/30min" target="_blank" rel="noopener" class="btn btn-primary">Prendre rendez-vous</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <div class="brand-mark">AR</div>
+          <div>
+            <strong>Avant Recours</strong>
+            <small>Le premier réflexe avant d'aller plus loin</small>
+          </div>
+        </div>
+        <p class="footer-desc">Cabinet individuel basé à Compiègne. Accompagnement des salariés en situation professionnelle difficile, en amont du contentieux.</p>
+      </div>
+      <div>
+        <p class="footer-heading">Navigation</p>
+        <ul class="footer-links">
+          <li><a href="../index.html#prestations">Prestations</a></li>
+          <li><a href="../index.html#methode">Méthode</a></li>
+          <li><a href="../index.html#apropos">À propos</a></li>
+          <li><a href="../index.html#faq">FAQ</a></li>
+          <li><a href="./index.html">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Contact</p>
+        <ul class="footer-links">
+          <li><a href="mailto:contact@avantrecours.fr">contact@avantrecours.fr</a></li>
+          <li><a href="tel:+33671592159">06 71 59 21 59</a></li>
+          <li>Compiègne (Oise)</li>
+          <li><a href="https://calendly.com/fabrice-zamia/30min" target="_blank" rel="noopener">Prendre rendez-vous</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Avant Recours — Fabrice Zamia. Tous droits réservés.</span>
+      <span>
+        <a href="../mentions-legales.html" style="color:rgba(255,255,255,0.5); text-decoration:underline;">Mentions légales</a>
+        &nbsp;·&nbsp;Le cabinet intervient en accompagnement et coaching. Il ne délivre pas de consultation juridique individualisée.
+      </span>
+    </div>
+  </footer>
+
+  <script>
+    // ---- YEAR ----
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ---- MOBILE NAV ----
+    const toggle = document.getElementById('navToggle');
+    const menu = document.getElementById('navMenu');
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+
+    // ---- ARTICLES DATA ----
+    // Structure : tableau d'objets. Chaque article publié via CMS sera ajouté ici.
+    // Pour l'automatisation n8n : ce tableau sera remplacé par un fetch vers un JSON généré.
+    const articles = [
+      // Exemple désactivé — décommenter pour tester :
+      // {
+      //   slug: "que-faire-apres-une-convocation",
+      //   titre: "Que faire après avoir reçu une convocation à un entretien préalable ?",
+      //   extrait: "Vous venez de recevoir une convocation. Voici les 3 erreurs à éviter et la bonne approche pour vous préparer efficacement.",
+      //   categorie: "convocation",
+      //   categorieLabel: "Convocation & entretien RH",
+      //   date: "2025-06-10",
+      //   featured: true
+      // }
+    ];
+
+    // ---- RENDER ----
+    function formatDate(iso) {
+      const d = new Date(iso);
+      return d.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
+    }
+
+    function renderArticles(filter = 'all') {
+      const grid = document.getElementById('blogGrid');
+      const empty = document.getElementById('blogEmpty');
+      const filtered = filter === 'all' ? articles : articles.filter(a => a.categorie === filter);
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '';
+        grid.appendChild(empty);
+        empty.style.display = 'block';
+        return;
+      }
+      empty.style.display = 'none';
+
+      // Featured = premier article ou explicitement marqué
+      const featured = filtered.find(a => a.featured) || filtered[0];
+      const rest = filtered.filter(a => a !== featured);
+
+      let html = '';
+
+      // Article à la une
+      html += `
+        <a href="/blog/${featured.slug}.html" class="article-card featured">
+          <div class="article-card-top"></div>
+          <div class="article-card-body">
+            <div class="article-meta">
+              <span class="article-cat">${featured.categorieLabel}</span>
+              <span class="article-date">${formatDate(featured.date)}</span>
+            </div>
+            <h2>${featured.titre}</h2>
+            <p>${featured.extrait}</p>
+            <span class="article-read-more">Lire l'article</span>
+          </div>
+        </a>`;
+
+      // Autres articles
+      rest.forEach(a => {
+        html += `
+          <a href="/blog/${a.slug}.html" class="article-card">
+            <div class="article-card-top"></div>
+            <div class="article-card-body">
+              <div class="article-meta">
+                <span class="article-cat">${a.categorieLabel}</span>
+                <span class="article-date">${formatDate(a.date)}</span>
+              </div>
+              <h2>${a.titre}</h2>
+              <p>${a.extrait}</p>
+              <span class="article-read-more">Lire l'article</span>
+            </div>
+          </a>`;
+      });
+
+      grid.innerHTML = html;
+    }
+
+    renderArticles();
+
+    // ---- FILTRES ----
+    document.getElementById('blogFilters').addEventListener('click', e => {
+      if (!e.target.classList.contains('filter-btn')) return;
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+      renderArticles(e.target.dataset.filter);
+    });
+  </script>
+</body>
+</html>
