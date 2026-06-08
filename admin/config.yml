@@ -2,6 +2,8 @@ backend:
   name: github
   repo: fabricezamia-ops/avantrecours-site
   branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
   site_domain: tiny-cendol-77d8f7.netlify.app
 
 media_folder: "images/blog"
