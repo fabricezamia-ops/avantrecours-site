@@ -72,14 +72,14 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Articles à ajouter au fur et à mesure des publications -->
-  <!--
   <url>
     <loc>https://www.avantrecours.fr/blog/quand-consulter-avocat-droit-travail.html</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Articles à ajouter au fur et à mesure des publications -->
+  <!--
   <url>
     <loc>https://www.avantrecours.fr/blog/convocation-rh-comment-preparer-reponse.html</loc>
     <lastmod>2026-07-10</lastmod>
