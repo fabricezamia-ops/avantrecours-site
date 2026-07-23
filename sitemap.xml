@@ -102,14 +102,14 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url> 
-   <!-- Articles à ajouter au fur et à mesure des publications -->
-  <!--
   <url>
     <loc>https://www.avantrecours.fr/blog/lettre-licenciement-comment-lire-comprendre.html</loc>
-    <lastmod>2026-07-24</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+   <!-- Articles à ajouter au fur et à mesure des publications -->
+  <!--
   <url>
     <loc>https://www.avantrecours.fr/blog/temoignage-negociation-depart-reussie.html</loc>
     <lastmod>2026-07-28</lastmod>
