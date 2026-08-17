@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discrimination au travail : ce que vous pouvez faire | Avant Recours</title>
+  <meta name="description" content="Vous pensez être victime de discrimination au travail. Voici les critères reconnus par la loi, comment documenter les faits et quelles démarches engager concrètement." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.avantrecours.fr/blog/discrimination-travail-quoi-faire.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.avantrecours.fr/blog/discrimination-travail-quoi-faire.html" />
+  <meta property="og:title" content="Discrimination au travail : ce que vous pouvez faire | Avant Recours" />
+  <meta property="og:description" content="Vous pensez être victime de discrimination au travail. Voici les critères reconnus par la loi, comment documenter les faits et quelles démarches engager." />
+  <meta property="og:locale" content="fr_FR" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Discrimination au travail : ce que vous pouvez faire",
+    "description": "Vous pensez être victime de discrimination au travail. Voici les critères reconnus par la loi, comment documenter les faits et quelles démarches engager concrètement.",
+    "datePublished": "2026-08-17",
+    "author": { "@type": "Person", "name": "Fabrice Zamia" },
+    "publisher": { "@type": "Organization", "name": "Avant Recours", "url": "https://www.avantrecours.fr" },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.avantrecours.fr/blog/discrimination-travail-quoi-faire.html" }
+  }
+  </script>
+  <link rel="icon" type="image/png" href="../avant-recours-favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .article-hero { background: linear-gradient(180deg, #f4f7fb 0%, #ffffff 100%); padding: 4.5rem 0 3rem; border-bottom: 1px solid var(--line-soft); }
+    .article-breadcrumb { font-size: 0.82rem; color: var(--muted); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem; }
+    .article-breadcrumb a { color: var(--primary-2); font-weight: 500; }
+    .article-breadcrumb a:hover { text-decoration: underline; }
+    .article-hero-meta { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem; flex-wrap: wrap; }
+    .article-cat-badge { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--primary-2); background: var(--primary-light); padding: 0.3rem 0.75rem; border-radius: 999px; }
+    .article-date-badge, .article-reading-time { font-size: 0.82rem; color: var(--muted); }
+    .article-hero h1 { font-style: italic; font-size: clamp(1.8rem, 3.5vw, 3rem); max-width: 24ch; margin-bottom: 1.25rem; }
+    .article-hero .article-intro { font-size: 1.1rem; color: var(--muted); max-width: 60ch; line-height: 1.65; margin: 0; }
+    .article-author { display: flex; align-items: center; gap: 1rem; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--line-soft); }
+    .author-avatar { width: 44px; height: 44px; border-radius: 50%; overflow: hidden; border: 2px solid var(--line); flex-shrink: 0; }
+    .author-avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .author-info strong { display: block; font-size: 0.9rem; color: var(--primary); font-weight: 600; }
+    .author-info span { font-size: 0.82rem; color: var(--muted); }
+    .article-layout { padding: 4rem 0 6rem; }
+    .article-grid { display: grid; grid-template-columns: 1fr 320px; gap: 4rem; align-items: start; }
+    .article-content { font-size: 1rem; line-height: 1.8; color: var(--text); }
+    .article-content h2 { font-size: 1.6rem; margin: 2.5rem 0 1rem; font-style: italic; color: var(--primary); }
+    .article-content h3 { font-size: 1.15rem; margin: 2rem 0 0.75rem; color: var(--primary); }
+    .article-content p { margin-bottom: 1.25rem; color: #3a4250; }
+    .article-content ul, .article-content ol { margin: 1rem 0 1.5rem; padding-left: 0; list-style: none; }
+    .article-content ul li, .article-content ol li { padding: 0.5rem 0 0.5rem 1.5rem; border-bottom: 1px solid var(--line-soft); font-size: 0.95rem; color: var(--muted); position: relative; }
+    .article-content ul li:last-child, .article-content ol li:last-child { border-bottom: none; }
+    .article-content ul li::before { content: '→'; position: absolute; left: 0; color: var(--primary-2); font-size: 0.85rem; }
+    .article-content ol { counter-reset: ol-counter; }
+    .article-content ol li { counter-increment: ol-counter; }
+    .article-content ol li::before { content: counter(ol-counter) '.'; position: absolute; left: 0; color: var(--primary-2); font-size: 0.85rem; font-weight: 700; }
+    .article-content blockquote { border-left: 3px solid var(--primary-2); background: var(--primary-light); padding: 1.25rem 1.5rem; border-radius: 0 var(--radius) var(--radius) 0; margin: 1.75rem 0; font-family: var(--font-display); font-size: 1.1rem; font-style: italic; color: var(--primary); line-height: 1.5; }
+    .article-content strong { color: var(--primary); font-weight: 600; }
+    .critere-block { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 1.75rem 2rem; margin: 1.5rem 0; box-shadow: var(--shadow-soft); position: relative; }
+    .critere-block::before { content: ''; position: absolute; top: 0; left: 0; bottom: 0; width: 4px; background: var(--primary-2); border-radius: 4px 0 0 4px; }
+    .critere-block h3 { margin: 0 0 0.75rem; font-size: 1.1rem; }
+    .critere-block p { margin-bottom: 0.75rem; font-size: 0.95rem; color: var(--muted); }
+    .critere-block p:last-child { margin-bottom: 0; }
+    .article-cta-box { background: var(--primary); border-radius: var(--radius-lg); padding: 2rem; margin: 2.5rem 0; text-align: center; }
+    .article-cta-box p { color: rgba(255,255,255,0.85) !important; font-size: 1rem; margin-bottom: 1.25rem; }
+    .article-cta-box strong { color: #fff !important; }
+    .article-cta-box .btn-primary { background: #fff; color: var(--primary); }
+    .article-sidebar { position: sticky; top: 96px; display: flex; flex-direction: column; gap: 1.5rem; }
+    .sidebar-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: var(--shadow-soft); }
+    .sidebar-card h3 { font-size: 1rem; margin-bottom: 1rem; color: var(--primary); }
+    .sidebar-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.6; margin-bottom: 1rem; }
+    .toc-list { list-style: none; padding: 0; margin: 0; }
+    .toc-list li { border-bottom: 1px solid var(--line-soft); }
+    .toc-list li:last-child { border-bottom: none; }
+    .toc-list a { display: block; padding: 0.5rem 0; font-size: 0.85rem; color: var(--muted); font-weight: 500; transition: color .2s; }
+    .toc-list a:hover { color: var(--primary); }
+    .article-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--line-soft); }
+    .article-tag { font-size: 0.78rem; font-weight: 600; color: var(--muted); background: var(--bg-soft); border: 1px solid var(--line); padding: 0.3rem 0.75rem; border-radius: 999px; }
+    .resume-box { background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 1.75rem 2rem; margin: 2.5rem 0; }
+    .resume-box h3 { margin-bottom: 1rem; font-size: 1.1rem; }
+    .next-article-teaser { border-top: 1px solid var(--line-soft); margin-top: 3rem; padding-top: 1.75rem; }
+    .next-article-teaser .teaser-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 0.5rem; }
+    .next-article-teaser .teaser-title { font-family: var(--font-display); font-size: 1.2rem; font-style: italic; color: var(--primary); font-weight: 600; }
+    .related-section { padding: 4rem 0; background: var(--bg); border-top: 1px solid var(--line-soft); }
+    .related-section h2 { font-size: 1.5rem; margin-bottom: 1.75rem; }
+    .related-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+    .related-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: var(--shadow-soft); text-decoration: none; color: inherit; transition: box-shadow .25s, transform .25s; display: flex; flex-direction: column; gap: 0.5rem; }
+    .related-card:hover { box-shadow: var(--shadow); transform: translateY(-3px); color: inherit; }
+    .related-card-cat { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--primary-2); }
+    .related-card h3 { font-size: 1rem; color: var(--primary); margin: 0; }
+    .related-card-link { font-size: 0.82rem; font-weight: 600; color: var(--primary-2); margin-top: auto; }
+    @media (max-width: 1020px) { .article-grid { grid-template-columns: 1fr; } .article-sidebar { position: static; } .related-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 768px) { .article-hero { padding: 3rem 0 2rem; } }
+  </style>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a href="../index.html" class="brand">
+        <div class="brand-mark">AR</div>
+        <div>
+          <strong>Avant Recours</strong>
+          <small>Le premier réflexe avant d'aller plus loin</small>
+        </div>
+      </a>
+      <nav class="nav-menu" id="navMenu" aria-label="Navigation principale">
+        <a href="../index.html#prestations">Prestations</a>
+        <a href="../index.html#methode">Méthode</a>
+        <a href="../index.html#apropos">À propos</a>
+        <a href="../index.html#faq">FAQ</a>
+        <a href="./index.html" style="color: var(--primary); font-weight:600;">Blog</a>
+        <a href="https://calendly.com/fabrice-zamia/30min" target="_blank" rel="noopener" class="nav-cta">Prendre rendez-vous</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="article-hero">
+      <div class="container narrow">
+        <nav class="article-breadcrumb" aria-label="Fil d'ariane">
+          <a href="../index.html">Accueil</a>
+          <span>›</span>
+          <a href="./index.html">Blog</a>
+          <span>›</span>
+          <span>Conseils pratiques</span>
+        </nav>
+        <div class="article-hero-meta">
+          <span class="article-cat-badge">Conseils pratiques</span>
+          <span class="article-date-badge">18 août 2026</span>
+          <span class="article-reading-time">7 min de lecture</span>
+        </div>
+        <h1>Discrimination au travail : ce que vous pouvez faire</h1>
+        <p class="article-intro">Vous avez le sentiment d'être traité différemment en raison d'une caractéristique personnelle. Voici ce que la loi reconnaît, comment documenter les faits et quelles démarches engager.</p>
+        <div class="article-author">
+          <div class="author-avatar">
+            <img src="../fabrice-zamia.jpg" alt="Fabrice Zamia" />
+          </div>
+          <div class="author-info">
+            <strong>Fabrice Zamia</strong>
+            <span>Conseil en relations sociales — Avant Recours</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-layout">
+      <div class="container">
+        <div class="article-grid">
+          <article class="article-content" id="articleContent">
+
+            <p>La discrimination au travail est l'une des situations les plus difficiles à nommer. Parce qu'elle est rarement explicite. Parce qu'elle s'installe progressivement. Parce qu'on doute souvent de sa propre perception.</p>
+            <p>Et pourtant, elle existe. Elle est encadrée par la loi. Et des recours sont possibles.</p>
+            <p>Cet article présente les critères légaux, les formes concrètes que prend la discrimination, et ce que vous pouvez faire. Il ne constitue pas une consultation juridique.</p>
+
+            <h2>Ce que dit la loi</h2>
+
+            <p>Le Code du travail interdit toute discrimination fondée sur un critère protégé dans tous les actes liés à l'emploi : recrutement, rémunération, formation, promotion, mutation, licenciement.</p>
+            <p>La loi française reconnaît plus de 25 critères de discrimination prohibés. Les plus fréquemment invoqués dans le cadre professionnel sont les suivants.</p>
+
+            <div class="critere-block">
+              <h3>Origine et nationalité</h3>
+              <p>Toute différence de traitement fondée sur l'origine réelle ou supposée d'un salarié est interdite. Cela inclut les décisions de recrutement, d'évolution de carrière ou de licenciement motivées par ce critère.</p>
+            </div>
+
+            <div class="critere-block">
+              <h3>Sexe et situation de famille</h3>
+              <p>La discrimination fondée sur le sexe inclut les inégalités salariales non justifiées entre hommes et femmes pour un travail équivalent. La maternité, la grossesse et la situation familiale sont également des critères protégés.</p>
+            </div>
+
+            <div class="critere-block">
+              <h3>Âge</h3>
+              <p>Un salarié ne peut pas être écarté d'une promotion, d'une formation ou d'un recrutement en raison de son âge, qu'il soit jugé trop jeune ou trop âgé.</p>
+            </div>
+
+            <div class="critere-block">
+              <h3>Handicap et état de santé</h3>
+              <p>Toute différence de traitement fondée sur un handicap reconnu ou un état de santé est interdite. L'employeur a par ailleurs une obligation d'aménagement raisonnable du poste pour les travailleurs handicapés.</p>
+            </div>
+
+            <div class="critere-block">
+              <h3>Activité syndicale et opinions</h3>
+              <p>Un salarié ne peut pas être sanctionné ou défavorisé en raison de son appartenance à un syndicat, de ses activités syndicales, de ses opinions politiques ou de ses convictions religieuses.</p>
+            </div>
+
+            <blockquote>La discrimination n'a pas besoin d'être explicite pour exister. Une décision qui défavorise systématiquement un salarié en raison d'un critère protégé est une discrimination, même si ce critère n'est jamais mentionné ouvertement.</blockquote>
+
+            <h2>Les deux formes de discrimination</h2>
+
+            <h3>La discrimination directe</h3>
+            <p>Une décision est prise explicitement en raison d'un critère protégé. C'est la forme la plus évidente, mais aussi la moins fréquente — rares sont les employeurs qui formalisent une décision discriminatoire par écrit.</p>
+
+            <h3>La discrimination indirecte</h3>
+            <p>Une règle ou une pratique apparemment neutre produit un effet défavorable sur des personnes partageant un critère protégé. Par exemple, une condition de mobilité géographique qui défavorise systématiquement les femmes avec enfants peut constituer une discrimination indirecte.</p>
+            <p>La discrimination indirecte est plus difficile à identifier et à prouver. Elle nécessite souvent une comparaison statistique ou une analyse des pratiques sur la durée.</p>
+
+            <h2>Comment documenter les faits</h2>
+
+            <p>En matière de discrimination, la charge de la preuve est aménagée en faveur du salarié. Il doit présenter des éléments qui laissent supposer l'existence d'une discrimination. C'est ensuite à l'employeur de prouver que sa décision est justifiée par des éléments objectifs.</p>
+            <p>Cette règle est importante : vous n'avez pas à prouver la discrimination avec certitude. Vous devez présenter des faits qui la rendent plausible.</p>
+
+            <h3>Les éléments utiles à rassembler</h3>
+            <ul>
+              <li>Les décisions qui vous ont défavorisé : refus de promotion, écart de rémunération, mise à l'écart, sanctions</li>
+              <li>Les éléments de comparaison : collègues dans des situations similaires ayant bénéficié d'un traitement différent</li>
+              <li>Les échanges écrits qui révèlent le critère invoqué, même indirectement</li>
+              <li>La chronologie : le lien temporel entre un événement (grossesse, maladie, activité syndicale) et une décision défavorable</li>
+              <li>Les témoignages de collègues qui ont observé des faits pertinents</li>
+            </ul>
+
+            <div class="article-cta-box">
+              <p><strong>Vous pensez être victime de discrimination et vous ne savez pas comment structurer les faits ?</strong><br>Un premier échange permet de mettre de l'ordre dans ce que vous avez vécu et d'identifier ce qui est documentable.</p>
+              <a href="https://calendly.com/fabrice-zamia/30min" target="_blank" rel="noopener" class="btn btn-primary">Prendre rendez-vous — premier échange gratuit</a>
+            </div>
+
+            <h2>Les interlocuteurs disponibles</h2>
+
+            <h3>Le Défenseur des droits</h3>
+            <p>Le Défenseur des droits est une autorité indépendante qui peut être saisie gratuitement par tout salarié s'estimant victime de discrimination. Il peut mener des investigations, formuler des recommandations et intervenir en médiation. Sa saisine est confidentielle.</p>
+
+            <h3>L'inspection du travail</h3>
+            <p>L'inspection du travail peut être saisie pour signaler des pratiques discriminatoires. Elle a le pouvoir de contrôler les entreprises et de dresser des procès-verbaux.</p>
+
+            <h3>Les représentants du personnel</h3>
+            <p>S'ils existent dans votre entreprise, les représentants du personnel peuvent vous appuyer dans un signalement interne ou vous orienter vers les bons interlocuteurs.</p>
+
+            <h3>Un avocat en droit du travail</h3>
+            <p>Quand la situation appelle une procédure contentieuse devant le Conseil de Prud'hommes, l'intervention d'un avocat est nécessaire. Il évaluera la solidité du dossier et déterminera la stratégie adaptée.</p>
+
+            <h2>Ce que je peux faire en amont</h2>
+
+            <p>Avant d'engager une procédure, plusieurs choses peuvent être préparées dans mon périmètre d'intervention :</p>
+            <ul>
+              <li>Mettre de l'ordre dans les faits et les éléments disponibles</li>
+              <li>Identifier ce qui constitue des éléments de présomption et ce qui manque encore</li>
+              <li>Préparer les échanges avec l'employeur si une démarche interne est envisagée</li>
+              <li>Orienter vers le bon interlocuteur selon le stade de la situation</li>
+            </ul>
+
+            <h2>En résumé</h2>
+
+            <div class="resume-box">
+              <h3>Ce qu'il faut retenir</h3>
+              <ol>
+                <li><strong>Plus de 25 critères sont protégés</strong> par la loi contre la discrimination au travail</li>
+                <li><strong>La discrimination n'a pas besoin d'être explicite</strong> : une pratique indirectement défavorable suffit</li>
+                <li><strong>La charge de la preuve est aménagée</strong> : vous devez présenter des faits plausibles, pas une preuve certaine</li>
+                <li><strong>Documentez les faits</strong> : décisions défavorables, comparaisons, chronologie, échanges écrits</li>
+                <li><strong>Des interlocuteurs gratuits existent</strong> : Défenseur des droits, inspection du travail, représentants du personnel</li>
+              </ol>
+            </div>
+
+            <div class="next-article-teaser">
+              <span class="teaser-label">Prochainement</span>
+              <span class="teaser-title">Période d'essai : vos droits en cas de rupture</span>
+            </div>
+
+            <div class="article-tags">
+              <span class="article-tag">Discrimination</span>
+              <span class="article-tag">Droit du travail</span>
+              <span class="article-tag">Défenseur des droits</span>
+              <span class="article-tag">Égalité professionnelle</span>
+              <span class="article-tag">Droits du salarié</span>
+            </div>
+
+          </article>
+
+          <aside class="article-sidebar">
+            <div class="sidebar-card" id="tocCard">
+              <h3>Dans cet article</h3>
+              <ul class="toc-list" id="tocList"></ul>
+            </div>
+            <div class="sidebar-card" style="background: var(--primary); border-color: var(--primary);">
+              <h3 style="color:#fff;">Votre situation nécessite un appui ?</h3>
+              <p style="color: rgba(255,255,255,0.75);">Premier échange gratuit, confidentiel, sans engagement.</p>
+              <a href="https://calendly.com/fabrice-zamia/30min" target="_blank" rel="noopener" class="btn btn-primary" style="background:#fff; color:var(--primary); width:100%; text-align:center; justify-content:center;">Prendre rendez-vous</a>
+            </div>
+            <div class="sidebar-card">
+              <h3>À propos de l'auteur</h3>
+              <p>Fabrice Zamia accompagne les salariés en situation professionnelle difficile. Coach certifié, diplômé d'un master RH avec dominante en droit social.</p>
+              <a href="../index.html#apropos" class="btn btn-secondary" style="width:100%; justify-content:center; font-size:0.82rem;">En savoir plus</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="related-section">
+      <div class="container">
+        <h2>Articles connexes</h2>
+        <div class="related-grid">
+          <a href="./harcelement-moral-au-travail-que-faire.html" class="related-card">
+            <span class="related-card-cat">Harcèlement moral</span>
+            <h3>Harcèlement moral au travail : que faire concrètement</h3>
+            <span class="related-card-link">Lire l'article →</span>
+          </a>
+          <a href="./burn-out-travail-reconnaitre-quoi-faire.html" class="related-card">
+            <span class="related-card-cat">Conseils pratiques</span>
+            <h3>Burn-out au travail : comment le reconnaître et quoi faire</h3>
+            <span class="related-card-link">Lire l'article →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <div class="brand-mark">AR</div>
+          <div>
+            <strong>Avant Recours</strong>
+            <small>Le premier réflexe avant d'aller plus loin</small>
+          </div>
+        </div>
+        <p class="footer-desc">Cabinet individuel basé à Compiègne. Accompagnement des salariés en situation professionnelle difficile, en amont du contentieux.</p>
+      </div>
+      <div>
+        <p class="footer-heading">Navigation</p>
+        <ul class="footer-links">
+          <li><a href="../index.html#prestations">Prestations</a></li>
+          <li><a href="../index.html#methode">Méthode</a></li>
+          <li><a href="../index.html#apropos">À propos</a></li>
+          <li><a href="./index.html">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Contact</p>
+        <ul class="footer-links">
+          <li><a href="mailto:contact@avantrecours.fr">contact@avantrecours.fr</a></li>
+          <li><a href="tel:+33671592159">06 71 59 21 59</a></li>
+          <li><a href="https://calendly.com/fabrice-zamia/30min" target="_blank" rel="noopener">Prendre rendez-vous</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Avant Recours — Fabrice Zamia. Tous droits réservés.</span>
+      <span>
+        <a href="../mentions-legales.html" style="color:rgba(255,255,255,0.5); text-decoration:underline;">Mentions légales</a>
+        &nbsp;·&nbsp;Le cabinet intervient en accompagnement et coaching. Il ne délivre pas de consultation juridique individualisée.
+      </span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.getElementById('navToggle');
+    const menu = document.getElementById('navMenu');
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+    (function buildToc() {
+      const headings = document.querySelectorAll('#articleContent h2');
+      const tocList = document.getElementById('tocList');
+      const tocCard = document.getElementById('tocCard');
+      if (headings.length < 2) { tocCard.style.display = 'none'; return; }
+      headings.forEach((h, i) => {
+        const id = 'section-' + i;
+        h.setAttribute('id', id);
+        const li = document.createElement('li');
+        li.innerHTML = `<a href="#${id}">${h.textContent}</a>`;
+        tocList.appendChild(li);
+      });
+    })();
+  </script>
+</body>
+</html>
