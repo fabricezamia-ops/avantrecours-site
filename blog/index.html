@@ -560,25 +560,19 @@
 
     function renderArticles(filter = 'all') {
       const grid = document.getElementById('blogGrid');
-      const empty = document.getElementById('blogEmpty');
-      const filtered = filter === 'all' ? articles : articles.filter(a => a.categorie === filter);
+      const filtered = filter === 'all'
+        ? articles
+        : articles.filter(a => a.categorie === filter);
 
       if (filtered.length === 0) {
-        grid.innerHTML = '';
-        grid.appendChild(empty);
-        empty.style.display = 'block';
+        grid.innerHTML = '<div class="blog-empty"><p>Aucun article dans cette catégorie pour le moment.</p></div>';
         return;
       }
-      empty.style.display = 'none';
 
-      // Featured = premier article ou explicitement marqué
       const featured = filtered.find(a => a.featured) || filtered[0];
       const rest = filtered.filter(a => a !== featured);
 
-      let html = '';
-
-      // Article à la une
-      html += `
+      let html = `
         <a href="/blog/${featured.slug}.html" class="article-card featured">
           <div class="article-card-top"></div>
           <div class="article-card-body">
@@ -592,7 +586,6 @@
           </div>
         </a>`;
 
-      // Autres articles
       rest.forEach(a => {
         html += `
           <a href="/blog/${a.slug}.html" class="article-card">
@@ -611,7 +604,6 @@
 
       grid.innerHTML = html;
     }
-
     renderArticles();
 
     // ---- FILTRES ----
