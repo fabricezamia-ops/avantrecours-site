@@ -7,20 +7,14 @@
   <meta name="description" content="Vous traversez une situation difficile au travail ? Avant Recours vous accompagne : clarification de situation, préparation d'entretien RH, structuration de dossier, orientation vers avocat. Visioconférence — France entière." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.avantrecours.fr/" />
-
-  <!-- Open Graph / LinkedIn -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.avantrecours.fr/" />
   <meta property="og:title" content="Avant Recours | Accompagnement du salarié en difficulté au travail" />
   <meta property="og:description" content="Un accompagnement structuré avant toute procédure. Clarification de situation, préparation d'échanges, structuration de dossier. Visioconférence — France entière." />
   <meta property="og:locale" content="fr_FR" />
-
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Avant Recours | Accompagnement du salarié en difficulté" />
   <meta name="twitter:description" content="Un accompagnement structuré avant toute procédure. Visioconférence — France entière." />
-
-  <!-- Données structurées Schema.org -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -36,36 +30,134 @@
       "addressRegion": "Hauts-de-France",
       "addressCountry": "FR"
     },
-    "areaServed": {
-      "@type": "Country",
-      "name": "France"
-    },
-    "founder": {
-      "@type": "Person",
-      "name": "Fabrice Zamia"
-    },
-    "serviceType": [
-      "Accompagnement salarié",
-      "Préparation entretien RH",
-      "Conseil en relations sociales",
-      "Structuration de dossier"
-    ],
+    "areaServed": { "@type": "Country", "name": "France" },
+    "founder": { "@type": "Person", "name": "Fabrice Zamia" },
+    "serviceType": ["Accompagnement salarié","Préparation entretien RH","Conseil en relations sociales","Structuration de dossier"],
     "priceRange": "€€"
   }
   </script>
-
   <link rel="icon" type="image/png" href="avant-recours-favicon.png">
   <link rel="apple-touch-icon" href="avant-recours-favicon.png">
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="style.css" />
+  <style>
+.parcours-section {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--line-soft);
+}
+.parcours-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary-2);
+  margin-bottom: 0.75rem;
+}
+.parcours-title {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-style: italic;
+  color: var(--primary);
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+}
+.parcours-phases {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 720px;
+}
+.parcours-phase {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  background: var(--surface);
+}
+.parcours-phase-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.875rem 1.5rem;
+}
+.phase-1 { background: var(--primary); }
+.phase-2 { background: #243f67; }
+.phase-3 { background: #2d4f7a; }
+.phase-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #C4A882;
+  background: rgba(196,168,130,0.15);
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.phase-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.parcours-phase-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.parcours-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.parcours-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary-2, #C4A882);
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+.parcours-item strong {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.2rem;
+}
+.parcours-item p {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.5;
+  margin: 0;
+}
+.parcours-connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+.connector-line {
+  width: 1px;
+  height: 16px;
+  background: var(--line);
+}
+.connector-arrow {
+  font-size: 1rem;
+  color: var(--primary-2, #C4A882);
+  line-height: 1;
+}
+@media (max-width: 768px) {
+  .parcours-title { font-size: 1.3rem; }
+  .parcours-phase-body { padding: 1.25rem; }
+}
+  </style>
 </head>
 <body>
 
-  <!-- HEADER -->
   <header class="site-header" id="top">
     <div class="container nav">
       <a href="#top" class="brand">
@@ -92,7 +184,6 @@
 
   <main>
 
-    <!-- HERO -->
     <section class="hero" id="hero">
       <div class="hero-bg"></div>
       <div class="container hero-grid">
@@ -127,7 +218,6 @@
       </div>
     </section>
 
-    <!-- INTRO -->
     <section class="intro-section section">
       <div class="container narrow">
         <p class="intro-lead">Quand une situation professionnelle devient tendue, il est souvent difficile de savoir par où commencer. Faut-il répondre immédiatement&nbsp;? Se taire&nbsp;? Préparer un entretien&nbsp;? Rassembler des pièces&nbsp;? Consulter un avocat sans délai&nbsp;?</p>
@@ -135,7 +225,6 @@
       </div>
     </section>
 
-    <!-- PRESTATIONS -->
     <section class="section alt" id="prestations">
       <div class="container">
         <div class="section-heading">
@@ -143,7 +232,6 @@
           <p>Chaque situation est différente. Mon rôle&nbsp;: vous aider à comprendre, structurer et agir — au bon moment.</p>
         </div>
         <div class="cards three">
-
           <div class="card service-card">
             <span class="card-tag">Format 1</span>
             <h3>Diagnostic &amp; Clarté</h3>
@@ -160,7 +248,6 @@
             <p class="price">150&nbsp;€</p>
             <a href="https://calendly.com/fabrice-zamia/30min" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:1rem;">Faire le point sur ma situation</a>
           </div>
-
           <div class="card service-card featured">
             <span class="card-tag">Format 2</span>
             <h3>Préparation &amp; Stratégie</h3>
@@ -179,7 +266,6 @@
             <p class="price">490&nbsp;€</p>
             <a href="https://calendly.com/fabrice-zamia/30min" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:1rem;">Préparer mon échange</a>
           </div>
-
           <div class="card service-card">
             <span class="card-tag">Format 3</span>
             <h3>Accompagnement renforcé</h3>
@@ -197,9 +283,7 @@
             <p class="price">990&nbsp;€</p>
             <a href="https://calendly.com/fabrice-zamia/30min" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:1rem;">Être accompagné dans la durée</a>
           </div>
-
         </div>
-
       </div>
     </section>
 
@@ -231,7 +315,131 @@
             <p>Lorsque le dossier appelle l'intervention d'un avocat, organiser un passage de relais clair et efficace.</p>
           </div>
         </div>
-</style>
+
+        <!-- PARCOURS D'ACCOMPAGNEMENT -->
+        <div class="parcours-section">
+          <div class="parcours-eyebrow">Ce à quoi vous pouvez vous attendre</div>
+          <h3 class="parcours-title">De la prise de contact à la fin de l'accompagnement</h3>
+          <div class="parcours-phases">
+
+            <div class="parcours-phase">
+              <div class="parcours-phase-header phase-1">
+                <span class="phase-label">Phase 1</span>
+                <span class="phase-name">Avant l'accompagnement</span>
+              </div>
+              <div class="parcours-phase-body">
+                <div class="parcours-item">
+                  <div class="parcours-dot"></div>
+                  <div>
+                    <strong>Premier échange (30–45 min, gratuit)</strong>
+                    <p>Vous décrivez votre situation librement. Sans filtre. Sans engagement.</p>
+                  </div>
+                </div>
+                <div class="parcours-item">
+                  <div class="parcours-dot"></div>
+                  <div>
+                    <strong>Évaluation honnête de la situation</strong>
+                    <p>Je vous dis si et comment je peux vous aider. Sans détour.</p>
+                  </div>
+                </div>
+                <div class="parcours-item">
+                  <div class="parcours-dot"></div>
+                  <div>
+                    <strong>Orientation si hors périmètre</strong>
+                    <p>Si ce n'est pas mon rôle, vous êtes orienté vers le bon interlocuteur.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="parcours-connector" aria-hidden="true">
+              <div class="connector-line"></div>
+              <div class="connector-arrow">↓</div>
+            </div>
+
+            <div class="parcours-phase">
+              <div class="parcours-phase-header phase-2">
+                <span class="phase-label">Phase 2</span>
+                <span class="phase-name">Pendant l'accompagnement</span>
+              </div>
+              <div class="parcours-phase-body">
+                <div class="parcours-item">
+                  <div class="parcours-dot"></div>
+                  <div>
+                    <strong>Mise en ordre des faits</strong>
+                    <p>Construction ensemble d'une chronologie factuelle et précise.</p>
+                  </div>
+                </div>
+                <div class="parcours-item">
+                  <div class="parcours-dot"></div>
+                  <div>
+                    <strong>Structuration du dossier</strong>
+                    <p>Les pièces sont identifiées, classées, organisées.</p>
+                  </div>
+                </div>
+                <div class="parcours-item">
+                  <div class="parcours-dot"></div>
+                  <div>
+                    <strong>Préparation des échanges</strong>
+                    <p>Entretien RH, réunion DRH, négociation : chaque étape est préparée.</p>
+                  </div>
+                </div>
+                <div class="parcours-item">
+                  <div class="parcours-dot"></div>
+                  <div>
+                    <strong>Travail sur la posture</strong>
+                    <p>Comment se tenir, quoi dire, comment répondre sous pression.</p>
+                  </div>
+                </div>
+                <div class="parcours-item">
+                  <div class="parcours-dot"></div>
+                  <div>
+                    <strong>Confidentialité totale</strong>
+                    <p>Rien de ce que vous partagez ne sort de nos échanges.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="parcours-connector" aria-hidden="true">
+              <div class="connector-line"></div>
+              <div class="connector-arrow">↓</div>
+            </div>
+
+            <div class="parcours-phase">
+              <div class="parcours-phase-header phase-3">
+                <span class="phase-label">Phase 3</span>
+                <span class="phase-name">À l'issue de l'accompagnement</span>
+              </div>
+              <div class="parcours-phase-body">
+                <div class="parcours-item">
+                  <div class="parcours-dot"></div>
+                  <div>
+                    <strong>Une décision éclairée</strong>
+                    <p>Pas sous pression. Pas dans l'urgence. Avec méthode.</p>
+                  </div>
+                </div>
+                <div class="parcours-item">
+                  <div class="parcours-dot"></div>
+                  <div>
+                    <strong>Relais vers un avocat si nécessaire</strong>
+                    <p>Avec un dossier structuré et une situation déjà comprise.</p>
+                  </div>
+                </div>
+                <div class="parcours-item">
+                  <div class="parcours-dot"></div>
+                  <div>
+                    <strong>Vous n'êtes plus seul</strong>
+                    <p>C'est souvent la chose la plus importante.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- FIN PARCOURS -->
+
         <div class="benefits-grid">
           <div class="benefit">Une lecture structurée de votre situation</div>
           <div class="benefit">Une aide concrète à la préparation de vos échanges</div>
@@ -240,267 +448,10 @@
           <div class="benefit">Une approche plus posée et plus stratégique</div>
           <div class="benefit">Une orientation claire lorsqu'un avocat devient nécessaire</div>
         </div>
+
       </div>
     </section>
-<div class="parcours-section">
-  <div class="parcours-eyebrow">Ce à quoi vous pouvez vous attendre</div>
-  <h3 class="parcours-title">De la prise de contact à la fin de l'accompagnement</h3>
 
-  <div class="parcours-phases">
-
-    <!-- PHASE 1 -->
-    <div class="parcours-phase">
-      <div class="parcours-phase-header phase-1">
-        <span class="phase-label">Phase 1</span>
-        <span class="phase-name">Avant l'accompagnement</span>
-      </div>
-      <div class="parcours-phase-body">
-        <div class="parcours-item">
-          <div class="parcours-dot"></div>
-          <div>
-            <strong>Premier échange (30–45 min, gratuit)</strong>
-            <p>Vous décrivez votre situation librement. Sans filtre. Sans engagement.</p>
-          </div>
-        </div>
-        <div class="parcours-item">
-          <div class="parcours-dot"></div>
-          <div>
-            <strong>Évaluation honnête de la situation</strong>
-            <p>Je vous dis si et comment je peux vous aider. Sans détour.</p>
-          </div>
-        </div>
-        <div class="parcours-item">
-          <div class="parcours-dot"></div>
-          <div>
-            <strong>Orientation si hors périmètre</strong>
-            <p>Si ce n'est pas mon rôle, vous êtes orienté vers le bon interlocuteur.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CONNECTEUR -->
-    <div class="parcours-connector" aria-hidden="true">
-      <div class="connector-line"></div>
-      <div class="connector-arrow">↓</div>
-    </div>
-
-    <!-- PHASE 2 -->
-    <div class="parcours-phase">
-      <div class="parcours-phase-header phase-2">
-        <span class="phase-label">Phase 2</span>
-        <span class="phase-name">Pendant l'accompagnement</span>
-      </div>
-      <div class="parcours-phase-body">
-        <div class="parcours-item">
-          <div class="parcours-dot"></div>
-          <div>
-            <strong>Mise en ordre des faits</strong>
-            <p>Construction ensemble d'une chronologie factuelle et précise.</p>
-          </div>
-        </div>
-        <div class="parcours-item">
-          <div class="parcours-dot"></div>
-          <div>
-            <strong>Structuration du dossier</strong>
-            <p>Les pièces sont identifiées, classées, organisées.</p>
-          </div>
-        </div>
-        <div class="parcours-item">
-          <div class="parcours-dot"></div>
-          <div>
-            <strong>Préparation des échanges</strong>
-            <p>Entretien RH, réunion DRH, négociation : chaque étape est préparée.</p>
-          </div>
-        </div>
-        <div class="parcours-item">
-          <div class="parcours-dot"></div>
-          <div>
-            <strong>Travail sur la posture</strong>
-            <p>Comment se tenir, quoi dire, comment répondre sous pression.</p>
-          </div>
-        </div>
-        <div class="parcours-item">
-          <div class="parcours-dot"></div>
-          <div>
-            <strong>Confidentialité totale</strong>
-            <p>Rien de ce que vous partagez ne sort de nos échanges.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CONNECTEUR -->
-    <div class="parcours-connector" aria-hidden="true">
-      <div class="connector-line"></div>
-      <div class="connector-arrow">↓</div>
-    </div>
-
-    <!-- PHASE 3 -->
-    <div class="parcours-phase">
-      <div class="parcours-phase-header phase-3">
-        <span class="phase-label">Phase 3</span>
-        <span class="phase-name">À l'issue de l'accompagnement</span>
-      </div>
-      <div class="parcours-phase-body">
-        <div class="parcours-item">
-          <div class="parcours-dot"></div>
-          <div>
-            <strong>Une décision éclairée</strong>
-            <p>Pas sous pression. Pas dans l'urgence. Avec méthode.</p>
-          </div>
-        </div>
-        <div class="parcours-item">
-          <div class="parcours-dot"></div>
-          <div>
-            <strong>Relais vers un avocat si nécessaire</strong>
-            <p>Avec un dossier structuré et une situation déjà comprise.</p>
-          </div>
-        </div>
-        <div class="parcours-item">
-          <div class="parcours-dot"></div>
-          <div>
-            <strong>Vous n'êtes plus seul</strong>
-            <p>C'est souvent la chose la plus importante.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<style>
-.parcours-section {
-  margin-top: 4rem;
-  padding-top: 3rem;
-  border-top: 1px solid var(--line-soft);
-}
-
-.parcours-eyebrow {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--primary-2);
-  margin-bottom: 0.75rem;
-}
-
-.parcours-title {
-  font-family: var(--font-display);
-  font-size: 1.6rem;
-  font-style: italic;
-  color: var(--primary);
-  margin-bottom: 2.5rem;
-  font-weight: 500;
-}
-
-.parcours-phases {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  max-width: 720px;
-}
-
-.parcours-phase {
-  border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-soft);
-  background: var(--surface);
-}
-
-.parcours-phase-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 0.875rem 1.5rem;
-}
-
-.phase-1 { background: var(--primary); }
-.phase-2 { background: #243f67; }
-.phase-3 { background: #2d4f7a; }
-
-.phase-label {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--accent, #C4A882);
-  background: rgba(196,168,130,0.15);
-  padding: 0.2rem 0.6rem;
-  border-radius: 999px;
-  white-space: nowrap;
-}
-
-.phase-name {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.parcours-phase-body {
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-
-.parcours-item {
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-}
-
-.parcours-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--primary-2, #C4A882);
-  margin-top: 6px;
-  flex-shrink: 0;
-}
-
-.parcours-item strong {
-  display: block;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--primary);
-  margin-bottom: 0.2rem;
-}
-
-.parcours-item p {
-  font-size: 0.85rem;
-  color: var(--muted);
-  line-height: 1.5;
-  margin: 0;
-}
-
-.parcours-connector {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0.5rem 0;
-}
-
-.connector-line {
-  width: 1px;
-  height: 16px;
-  background: var(--line);
-}
-
-.connector-arrow {
-  font-size: 1rem;
-  color: var(--primary-2, #C4A882);
-  line-height: 1;
-}
-
-@media (max-width: 768px) {
-  .parcours-title { font-size: 1.3rem; }
-  .parcours-phase-body { padding: 1.25rem; }
-}
-
-    <!-- À PROPOS -->
     <section class="section alt" id="apropos">
       <div class="container">
         <div class="about-grid">
@@ -535,7 +486,6 @@
       </div>
     </section>
 
-    <!-- PÉRIMÈTRE -->
     <section class="section" id="perimetre">
       <div class="container">
         <div class="section-heading narrow">
@@ -570,7 +520,6 @@
       </div>
     </section>
 
-    <!-- FAQ -->
     <section class="section alt" id="faq">
       <div class="container">
         <div class="section-heading narrow">
@@ -609,7 +558,6 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
     <section class="section contact-section" id="contact">
       <div class="container contact-grid">
         <div>
@@ -663,7 +611,6 @@
 
   </main>
 
-  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
