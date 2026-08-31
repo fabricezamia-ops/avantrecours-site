@@ -144,14 +144,14 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-   <!-- Articles a paraitre -->
-  <!--
   <url>
     <loc>https://www.avantrecours.fr/blog/solde-tout-compte-verifier-avant-signer.html</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+    <!-- Articles a paraitre -->
+  <!--
   <url>
     <loc>https://www.avantrecours.fr/blog/avertissement-disciplinaire-comment-repondre.html</loc>
     <lastmod>2026-09-08</lastmod>
