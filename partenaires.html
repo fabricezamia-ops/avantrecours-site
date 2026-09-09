@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Partenaires & Prescripteurs | Avant Recours — Oise</title>
+  <meta name="description" content="Élus de CSE, représentants syndicaux, médecins du travail et assistants sociaux du travail : découvrez comment Avant Recours peut devenir votre relais de confiance pour accompagner les salariés en difficulté." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.avantrecours.fr/partenaires.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.avantrecours.fr/partenaires.html" />
+  <meta property="og:title" content="Partenaires & Prescripteurs | Avant Recours" />
+  <meta property="og:description" content="Élus CSE, syndicats, médecins du travail : comment Avant Recours complète votre action auprès des salariés en difficulté." />
+  <meta property="og:locale" content="fr_FR" />
+  <link rel="icon" type="image/png" href="avant-recours-favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .partenaires-hero {
+      background: linear-gradient(180deg, #f4f7fb 0%, #ffffff 100%);
+      padding: 5rem 0 3.5rem;
+      border-bottom: 1px solid var(--line-soft);
+    }
+    .partenaires-hero .eyebrow { margin-bottom: 1rem; }
+    .partenaires-hero h1 {
+      font-style: italic;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      max-width: 22ch;
+      margin-bottom: 1.25rem;
+    }
+    .partenaires-hero p {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 60ch;
+      line-height: 1.7;
+    }
+    .partenaires-section { padding: 5rem 0; }
+    .partenaires-section.alt { background: var(--bg); }
+    .partenaire-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+      margin-top: 3rem;
+    }
+    .partenaire-intro h2 {
+      font-size: 1.75rem;
+      font-style: italic;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    .partenaire-intro p {
+      font-size: 1rem;
+      color: var(--muted);
+      line-height: 1.75;
+      margin-bottom: 1.25rem;
+    }
+    .partenaire-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow-soft);
+    }
+    .partenaire-card h3 {
+      font-size: 1.1rem;
+      color: var(--primary);
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--line-soft);
+    }
+    .partenaire-points {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .partenaire-points li {
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+      font-size: 0.92rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .partenaire-points li::before {
+      content: '✓';
+      color: var(--primary-2);
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-top: 1px;
+      flex-shrink: 0;
+    }
+    .partenaire-cta-row {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .section-divider {
+      width: 60px;
+      height: 3px;
+      background: var(--primary-2);
+      border-radius: 2px;
+      margin: 1rem 0 2rem;
+    }
+    .contact-simple {
+      background: var(--primary);
+      border-radius: var(--radius-lg);
+      padding: 3rem;
+      text-align: center;
+      margin-top: 4rem;
+    }
+    .contact-simple h2 {
+      color: #fff;
+      font-size: 1.75rem;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+    .contact-simple p {
+      color: rgba(255,255,255,0.75);
+      font-size: 1rem;
+      max-width: 50ch;
+      margin: 0 auto 2rem;
+      line-height: 1.7;
+    }
+    .contact-simple .btn-primary {
+      background: #fff;
+      color: var(--primary);
+    }
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .tag {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--primary-2);
+      background: var(--primary-light);
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+    }
+    @media (max-width: 900px) {
+      .partenaire-block { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <div class="brand-mark">AR</div>
+        <div>
+          <strong>Avant Recours</strong>
+          <small>Le premier réflexe avant d'aller plus loin</small>
+        </div>
+      </a>
+      <nav class="nav-menu" id="navMenu" aria-label="Navigation principale">
+        <a href="index.html#prestations">Prestations</a>
+        <a href="index.html#methode">Méthode</a>
+        <a href="index.html#apropos">À propos</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="partenaires.html" style="color: var(--primary); font-weight:600;">Partenaires</a>
+        <a href="/blog/">Blog</a>
+        <a href="https://calendly.com/fabrice-zamia/30min" target="_blank" rel="noopener" class="nav-cta">Prendre rendez-vous</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="partenaires-hero">
+      <div class="container narrow">
+        <span class="eyebrow">Réseau & Prescripteurs — Oise et France entière</span>
+        <h1>Avant Recours, votre relais de confiance pour les salariés en difficulté</h1>
+        <p>Vous accompagnez des salariés au quotidien dans votre rôle. Quand la situation appelle un appui méthodologique individuel et confidentiel, Avant Recours intervient en complémentarité de votre action, strictement en amont du contentieux.</p>
+      </div>
+    </section>
+
+    <!-- BLOC 1 : CSE & SYNDICATS -->
+    <section class="partenaires-section">
+      <div class="container">
+        <div class="tag-list">
+          <span class="tag">Élus CSE</span>
+          <span class="tag">Délégués syndicaux</span>
+          <span class="tag">Représentants du personnel</span>
+        </div>
+        <div class="section-divider"></div>
+
+        <div class="partenaire-block">
+          <div class="partenaire-intro">
+            <h2>Élus de CSE & Représentants syndicaux : devenez prescripteur Avant Recours</h2>
+            <p>En tant que représentants du personnel, vous êtes les premiers témoins de la détresse des salariés : conflits managériaux, procédures RH complexes, risques psychosociaux. Vous assurez avec force votre rôle d'écoute et de défense collective ou juridique.</p>
+            <p>Accompagner un collègue au quotidien sur le plan méthodologique, émotionnel et comportemental exige cependant un temps et des ressources dont vous ne disposez pas toujours.</p>
+            <p><strong>Avant Recours se positionne comme votre relais de confiance individuel.</strong> Vous gérez le cadre collectif et l'éventuel relais juridique. J'accompagne le salarié dans sa stratégie personnelle, sa posture et la structuration factuelle de son dossier.</p>
+          </div>
+
+          <div class="partenaire-card">
+            <h3>Ce que je propose aux élus et délégués</h3>
+            <ul class="partenaire-points">
+              <li><strong>Une complémentarité parfaite :</strong> vous gérez le collectif et le juridique, j'accompagne l'individuel et le méthodologique.</li>
+              <li><strong>Un espace neutre et confidentiel :</strong> le salarié prend du recul hors des murs de l'entreprise avec un professionnel RH certifié.</li>
+              <li><strong>Une déontologie stricte :</strong> mon intervention se fait exclusivement en amont du contentieux. Si la situation exige une action judiciaire, le salarié est réorienté vers vos permanences ou vers un avocat.</li>
+              <li><strong>Une ressource concrète pour vos permanences :</strong> une plaquette de présentation à remettre directement aux salariés qui vous sollicitent.</li>
+            </ul>
+            <div class="partenaire-cta-row">
+              <a href="https://calendly.com/fabrice-zamia/30min" target="_blank" rel="noopener" class="btn btn-primary">Planifier un échange de 10 minutes</a>
+              <a href="mailto:contact@avantrecours.fr?subject=Demande de plaquette CSE" class="btn btn-secondary">Recevoir notre plaquette de présentation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOC 2 : SANTÉ AU TRAVAIL -->
+    <section class="partenaires-section alt">
+      <div class="container">
+        <div class="tag-list">
+          <span class="tag">Médecins du travail</span>
+          <span class="tag">Infirmiers en santé au travail</span>
+          <span class="tag">Assistants de service social</span>
+        </div>
+        <div class="section-divider"></div>
+
+        <div class="partenaire-block">
+          <div class="partenaire-intro">
+            <h2>Professionnels de santé & services sociaux du travail : un relais pour vos orientations</h2>
+            <p>Médecins du travail, infirmiers en santé au travail et assistants de service social — notamment au sein des SPSTI de l'Oise comme Présoa : vous accompagnez quotidiennement des salariés confrontés aux risques psychosociaux, à la souffrance au travail ou à des situations de rupture imminente.</p>
+            <p>Lorsque la situation de travail est bloquée et que le salarié a besoin de reconstruire sa capacité d'action à l'extérieur de l'entreprise, <strong>Avant Recours intervient en complémentarité de votre action médico-sociale.</strong></p>
+            <p>Mon approche est managériale, méthodologique et comportementale. Elle s'inscrit en amont de tout contentieux pour aider le salarié à retrouver de la clarté et de la méthode.</p>
+          </div>
+
+          <div class="partenaire-card">
+            <h3>Ce que je propose aux professionnels de santé</h3>
+            <ul class="partenaire-points">
+              <li><strong>Prévention de la désinsertion professionnelle :</strong> j'aide le salarié à sortir de la confusion émotionnelle, à poser des mots factuels sur sa situation et à redevenir acteur de son parcours.</li>
+              <li><strong>Neutralité et respect de votre déontologie :</strong> Avant Recours n'est pas un cabinet de défense juridique. Mon approche est strictement méthodologique et comportementale.</li>
+              <li><strong>Respect des périmètres :</strong> coaching de posture et structuration factuelle du dossier, pour aborder sereinement les solutions internes ou externes selon la situation.</li>
+              <li><strong>Des fiches d'information :</strong> disponibles sur demande pour vos consultations et orientations.</li>
+            </ul>
+            <div class="partenaire-cta-row">
+              <a href="https://calendly.com/fabrice-zamia/30min" target="_blank" rel="noopener" class="btn btn-primary">Prendre contact pour un échange professionnel</a>
+              <a href="mailto:contact@avantrecours.fr?subject=Demande de fiches d'information" class="btn btn-secondary">Recevoir nos fiches d'information</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT FINAL -->
+    <section class="partenaires-section">
+      <div class="container">
+        <div class="contact-simple">
+          <h2>Une question sur notre mode de fonctionnement ?</h2>
+          <p>Je suis disponible pour un échange de 10 à 15 minutes avec tout professionnel souhaitant comprendre mon périmètre d'intervention et envisager une complémentarité.</p>
+          <a href="https://calendly.com/fabrice-zamia/30min" target="_blank" rel="noopener" class="btn btn-primary">Planifier un échange</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <div class="brand-mark">AR</div>
+          <div>
+            <strong>Avant Recours</strong>
+            <small>Le premier réflexe avant d'aller plus loin</small>
+          </div>
+        </div>
+        <p class="footer-desc">Cabinet individuel basé à Compiègne. Accompagnement des salariés en situation professionnelle difficile dans l'Oise et partout en France, en amont du contentieux.</p>
+      </div>
+      <div>
+        <p class="footer-heading">Navigation</p>
+        <ul class="footer-links">
+          <li><a href="index.html#prestations">Prestations</a></li>
+          <li><a href="index.html#methode">Méthode</a></li>
+          <li><a href="index.html#apropos">À propos</a></li>
+          <li><a href="partenaires.html">Partenaires</a></li>
+          <li><a href="/blog/">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Contact</p>
+        <ul class="footer-links">
+          <li><a href="mailto:contact@avantrecours.fr">contact@avantrecours.fr</a></li>
+          <li><a href="tel:+33671592159">06 71 59 21 59</a></li>
+          <li>Oise — Compiègne, Beauvais, Creil</li>
+          <li><a href="https://calendly.com/fabrice-zamia/30min" target="_blank" rel="noopener">Prendre rendez-vous</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Avant Recours — Fabrice Zamia. Tous droits réservés.</span>
+      <span>
+        <a href="mentions-legales.html" style="color:rgba(255,255,255,0.5); text-decoration:underline;">Mentions légales</a>
+        &nbsp;·&nbsp;Le cabinet intervient en accompagnement et coaching. Il ne délivre pas de consultation juridique individualisée.
+      </span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.getElementById('navToggle');
+    const menu = document.getElementById('navMenu');
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>
