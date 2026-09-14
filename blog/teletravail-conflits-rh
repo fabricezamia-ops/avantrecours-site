@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Télétravail et conflits RH : ce qui change | Avant Recours</title>
+  <meta name="description" content="Le télétravail modifie la façon dont les conflits RH se construisent, s'escaladent et se documentent. Voici ce qui change concrètement et comment adapter votre approche." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.avantrecours.fr/blog/teletravail-conflits-rh.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.avantrecours.fr/blog/teletravail-conflits-rh.html" />
+  <meta property="og:title" content="Télétravail et conflits RH : ce qui change | Avant Recours" />
+  <meta property="og:description" content="Le télétravail modifie la façon dont les conflits RH se construisent et se documentent. Voici ce qui change concrètement et comment adapter votre approche." />
+  <meta property="og:locale" content="fr_FR" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Télétravail et conflits RH : ce qui change",
+    "description": "Le télétravail modifie la façon dont les conflits RH se construisent, s'escaladent et se documentent. Voici ce qui change concrètement et comment adapter votre approche.",
+    "datePublished": "2026-09-14",
+    "author": { "@type": "Person", "name": "Fabrice Zamia" },
+    "publisher": { "@type": "Organization", "name": "Avant Recours", "url": "https://www.avantrecours.fr" },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.avantrecours.fr/blog/teletravail-conflits-rh.html" }
+  }
+  </script>
+  <link rel="icon" type="image/png" href="../avant-recours-favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .article-hero { background: linear-gradient(180deg, #f4f7fb 0%, #ffffff 100%); padding: 4.5rem 0 3rem; border-bottom: 1px solid var(--line-soft); }
+    .article-breadcrumb { font-size: 0.82rem; color: var(--muted); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem; }
+    .article-breadcrumb a { color: var(--primary-2); font-weight: 500; }
+    .article-breadcrumb a:hover { text-decoration: underline; }
+    .article-hero-meta { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem; flex-wrap: wrap; }
+    .article-cat-badge { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--primary-2); background: var(--primary-light); padding: 0.3rem 0.75rem; border-radius: 999px; }
+    .article-date-badge, .article-reading-time { font-size: 0.82rem; color: var(--muted); }
+    .article-hero h1 { font-style: italic; font-size: clamp(1.8rem, 3.5vw, 3rem); max-width: 24ch; margin-bottom: 1.25rem; }
+    .article-hero .article-intro { font-size: 1.1rem; color: var(--muted); max-width: 60ch; line-height: 1.65; margin: 0; }
+    .article-author { display: flex; align-items: center; gap: 1rem; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--line-soft); }
+    .author-avatar { width: 44px; height: 44px; border-radius: 50%; overflow: hidden; border: 2px solid var(--line); flex-shrink: 0; }
+    .author-avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .author-info strong { display: block; font-size: 0.9rem; color: var(--primary); font-weight: 600; }
+    .author-info span { font-size: 0.82rem; color: var(--muted); }
+    .article-layout { padding: 4rem 0 6rem; }
+    .article-grid { display: grid; grid-template-columns: 1fr 320px; gap: 4rem; align-items: start; }
+    .article-content { font-size: 1rem; line-height: 1.8; color: var(--text); }
+    .article-content h2 { font-size: 1.6rem; margin: 2.5rem 0 1rem; font-style: italic; color: var(--primary); }
+    .article-content h3 { font-size: 1.15rem; margin: 2rem 0 0.75rem; color: var(--primary); }
+    .article-content p { margin-bottom: 1.25rem; color: #3a4250; }
+    .article-content ul, .article-content ol { margin: 1rem 0 1.5rem; padding-left: 0; list-style: none; }
+    .article-content ul li, .article-content ol li { padding: 0.5rem 0 0.5rem 1.5rem; border-bottom: 1px solid var(--line-soft); font-size: 0.95rem; color: var(--muted); position: relative; }
+    .article-content ul li:last-child, .article-content ol li:last-child { border-bottom: none; }
+    .article-content ul li::before { content: '→'; position: absolute; left: 0; color: var(--primary-2); font-size: 0.85rem; }
+    .article-content ol { counter-reset: ol-counter; }
+    .article-content ol li { counter-increment: ol-counter; }
+    .article-content ol li::before { content: counter(ol-counter) '.'; position: absolute; left: 0; color: var(--primary-2); font-size: 0.85rem; font-weight: 700; }
+    .article-content blockquote { border-left: 3px solid var(--primary-2); background: var(--primary-light); padding: 1.25rem 1.5rem; border-radius: 0 var(--radius) var(--radius) 0; margin: 1.75rem 0; font-family: var(--font-display); font-size: 1.1rem; font-style: italic; color: var(--primary); line-height: 1.5; }
+    .article-content strong { color: var(--primary); font-weight: 600; }
+    .obs-block { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 1.75rem 2rem; margin: 1.5rem 0; box-shadow: var(--shadow-soft); position: relative; }
+    .obs-block::before { content: ''; position: absolute; top: 0; left: 0; bottom: 0; width: 4px; background: var(--primary-2); border-radius: 4px 0 0 4px; }
+    .obs-block h3 { margin: 0 0 0.75rem; font-size: 1.1rem; }
+    .obs-block p { margin-bottom: 0.75rem; font-size: 0.95rem; color: var(--muted); }
+    .obs-block p:last-child { margin-bottom: 0; }
+    .article-cta-box { background: var(--primary); border-radius: var(--radius-lg); padding: 2rem; margin: 2.5rem 0; text-align: center; }
+    .article-cta-box p { color: rgba(255,255,255,0.85) !important; font-size: 1rem; margin-bottom: 1.25rem; }
+    .article-cta-box strong { color: #fff !important; }
+    .article-cta-box .btn-primary { background: #fff; color: var(--primary); }
+    .article-sidebar { position: sticky; top: 96px; display: flex; flex-direction: column; gap: 1.5rem; }
+    .sidebar-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: var(--shadow-soft); }
+    .sidebar-card h3 { font-size: 1rem; margin-bottom: 1rem; color: var(--primary); }
+    .sidebar-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.6; margin-bottom: 1rem; }
+    .toc-list { list-style: none; padding: 0; margin: 0; }
+    .toc-list li { border-bottom: 1px solid var(--line-soft); }
+    .toc-list li:last-child { border-bottom: none; }
+    .toc-list a { display: block; padding: 0.5rem 0; font-size: 0.85rem; color: var(--muted); font-weight: 500; transition: color .2s; }
+    .toc-list a:hover { color: var(--primary); }
+    .article-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--line-soft); }
+    .article-tag { font-size: 0.78rem; font-weight: 600; color: var(--muted); background: var(--bg-soft); border: 1px solid var(--line); padding: 0.3rem 0.75rem; border-radius: 999px; }
+    .resume-box { background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 1.75rem 2rem; margin: 2.5rem 0; }
+    .resume-box h3 { margin-bottom: 1rem; font-size: 1.1rem; }
+    .next-article-teaser { border-top: 1px solid var(--line-soft); margin-top: 3rem; padding-top: 1.75rem; }
+    .next-article-teaser .teaser-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 0.5rem; }
+    .next-article-teaser .teaser-title { font-family: var(--font-display); font-size: 1.2rem; font-style: italic; color: var(--primary); font-weight: 600; }
+    .related-section { padding: 4rem 0; background: var(--bg); border-top: 1px solid var(--line-soft); }
+    .related-section h2 { font-size: 1.5rem; margin-bottom: 1.75rem; }
+    .related-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+    .related-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: var(--shadow-soft); text-decoration: none; color: inherit; transition: box-shadow .25s, transform .25s; display: flex; flex-direction: column; gap: 0.5rem; }
+    .related-card:hover { box-shadow: var(--shadow); transform: translateY(-3px); color: inherit; }
+    .related-card-cat { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--primary-2); }
+    .related-card h3 { font-size: 1rem; color: var(--primary); margin: 0; }
+    .related-card-link { font-size: 0.82rem; font-weight: 600; color: var(--primary-2); margin-top: auto; }
+    @media (max-width: 1020px) { .article-grid { grid-template-columns: 1fr; } .article-sidebar { position: static; } .related-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 768px) { .article-hero { padding: 3rem 0 2rem; } }
+  </style>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a href="../index.html" class="brand">
+        <div class="brand-mark">AR</div>
+        <div>
+          <strong>Avant Recours</strong>
+          <small>Le premier réflexe avant d'aller plus loin</small>
+        </div>
+      </a>
+      <nav class="nav-menu" id="navMenu" aria-label="Navigation principale">
+        <a href="../index.html#prestations">Prestations</a>
+        <a href="../index.html#methode">Méthode</a>
+        <a href="../index.html#apropos">À propos</a>
+        <a href="../index.html#faq">FAQ</a>
+        <a href="./index.html" style="color: var(--primary); font-weight:600;">Blog</a>
+        <a href="https://calendly.com/fabrice-zamia/30min" target="_blank" rel="noopener" class="nav-cta">Prendre rendez-vous</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="article-hero">
+      <div class="container narrow">
+        <nav class="article-breadcrumb" aria-label="Fil d'ariane">
+          <a href="../index.html">Accueil</a>
+          <span>›</span>
+          <a href="./index.html">Blog</a>
+          <span>›</span>
+          <span>Conseils pratiques</span>
+        </nav>
+        <div class="article-hero-meta">
+          <span class="article-cat-badge">Conseils pratiques</span>
+          <span class="article-date-badge">14 septembre 2026</span>
+          <span class="article-reading-time">7 min de lecture</span>
+        </div>
+        <h1>Télétravail et conflits RH : ce qui change</h1>
+        <p class="article-intro">Le télétravail a modifié en profondeur la façon dont les tensions professionnelles se construisent, s'escaladent et se gèrent. Ce qui fonctionnait en présentiel ne fonctionne pas toujours à distance. Voici ce qui change concrètement.</p>
+        <div class="article-author">
+          <div class="author-avatar">
+            <img src="../fabrice-zamia.jpg" alt="Fabrice Zamia" />
+          </div>
+          <div class="author-info">
+            <strong>Fabrice Zamia</strong>
+            <span>Conseil en relations sociales — Avant Recours</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-layout">
+      <div class="container">
+        <div class="article-grid">
+          <article class="article-content" id="articleContent">
+
+            <p>Depuis la généralisation du télétravail, les situations que j'accompagne ont évolué. Les conflits naissent différemment, les signaux d'alerte sont plus difficiles à détecter, et la documentation des faits pose de nouveaux défis.</p>
+            <p>Ce n'est pas que le télétravail crée plus de conflits. C'est qu'il les rend plus difficiles à voir venir, et parfois plus difficiles à prouver.</p>
+
+            <h2>Comment le télétravail modifie la construction des tensions</h2>
+
+            <div class="obs-block">
+              <h3>L'isolement progressif devient invisible</h3>
+              <p>En présentiel, une mise à l'écart se voit. Les collègues observent. Les repas qui ne se partagent plus, les réunions auxquelles on n'est plus convié, les conversations qui s'arrêtent quand on arrive : ces signaux sont perceptibles par l'entourage.</p>
+              <p>En télétravail, l'isolement se produit sans témoin. On est retiré d'un canal de messagerie. On n'est plus inclus dans les invitations à certaines réunions. On répond de moins en moins aux emails. Tout cela se passe en silence, sans que personne d'autre ne le voie.</p>
+            </div>
+
+            <div class="obs-block">
+              <h3>Les échanges écrits laissent plus de traces</h3>
+              <p>C'est l'un des effets paradoxaux du télétravail. La communication à distance produit plus de preuves écrites qu'une communication en face à face. Un email, un message Teams ou Slack, une décision communiquée par écrit : tout cela est documenté.</p>
+              <p>Ce qui signifie que le salarié dispose potentiellement de plus d'éléments pour documenter sa situation. Mais cela signifie aussi que ses propres réponses sont tracées. Ce qu'il écrit peut être utilisé.</p>
+            </div>
+
+            <div class="obs-block">
+              <h3>La surveillance s'intensifie et se formalise</h3>
+              <p>Certains employeurs ont instauré des outils de suivi de l'activité à distance : logiciels de pointage, captures d'écran automatiques, suivi des connexions. Ces pratiques sont encadrées par la loi, mais elles existent et produisent des données qui peuvent être invoquées dans un litige.</p>
+              <p>Un salarié en télétravail peut se retrouver surveillé de façon bien plus systématique qu'il ne l'était en présentiel, sans toujours en être informé correctement.</p>
+            </div>
+
+            <div class="obs-block">
+              <h3>Les reproches portent souvent sur la disponibilité</h3>
+              <p>En télétravail, un nouveau type de reproche est apparu : la disponibilité. Réponse tardive aux messages, déconnexion hors des horaires convenus, absence lors d'une réunion improvisée. Ces éléments peuvent être instrumentalisés pour construire un dossier d'insuffisance professionnelle, même quand le travail réel est de qualité.</p>
+            </div>
+
+            <blockquote>Le télétravail ne crée pas les conflits. Il les rend plus difficiles à percevoir, plus faciles à instrumentaliser, et plus complexes à documenter pour le salarié.</blockquote>
+
+            <h2>Ce que le salarié en télétravail doit surveiller</h2>
+
+            <h3>Les changements dans les modalités de communication</h3>
+            <p>On vous retire d'un groupe de messagerie. On ne vous inclut plus dans certains emails. Vos messages restent sans réponse de façon inhabituelle. Ces changements sont des signaux à noter avec précision — date, contexte, personnes concernées.</p>
+
+            <h3>Les demandes de justification écrite</h3>
+            <p>On vous demande de documenter chaque action, de justifier chaque temps de connexion, de rendre compte de votre activité de façon disproportionnée par rapport à vos collègues. C'est un signal fréquent dans les situations de pression à distance.</p>
+
+            <h3>Les réunions auxquelles vous n'êtes plus convié</h3>
+            <p>Listez les réunions récurrentes auxquelles vous participiez et auxquelles vous n'êtes plus invité. La date à laquelle l'invitation a cessé d'arriver est une information utile.</p>
+
+            <h3>Les objectifs qui changent sans échange préalable</h3>
+            <p>En télétravail, les objectifs peuvent être modifiés par email sans discussion. Conservez tout document qui formalise vos objectifs initiaux et les modifications ultérieures.</p>
+
+            <h2>Ce que le télétravail change pour la documentation</h2>
+
+            <h3>Avantage : les échanges sont écrits</h3>
+            <p>Utilisez-le. Quand quelque chose d'important est dit en réunion visio, envoyez un email récapitulatif : "Suite à notre échange de ce jour, je comprends que...". Cela crée une trace écrite d'une communication orale.</p>
+
+            <h3>Avantage : les documents sont accessibles</h3>
+            <p>Les emails, les documents partagés, les messages de messagerie instantanée : conservez-les sur un support personnel dès maintenant. Ne comptez pas sur votre accès aux outils professionnels pour les retrouver plus tard.</p>
+
+            <h3>Attention : l'employeur surveille aussi</h3>
+            <p>Ce que vous écrivez dans les outils professionnels peut être lu par l'employeur. Évitez d'exprimer des frustrations ou des positions sensibles sur les canaux de l'entreprise. Gardez ces échanges pour des canaux personnels.</p>
+
+            <div class="article-cta-box">
+              <p><strong>Vous êtes en télétravail et vous sentez que la situation se dégrade sans savoir comment le nommer ?</strong><br>Un premier échange permet de mettre de l'ordre dans les faits et d'identifier ce qui est documentable.</p>
+              <a href="https://calendly.com/fabrice-zamia/30min" target="_blank" rel="noopener" class="btn btn-primary">Prendre rendez-vous — premier échange gratuit</a>
+            </div>
+
+            <h2>Les droits du salarié en télétravail</h2>
+
+            <p>Le télétravail ne modifie pas les droits fondamentaux du salarié. Quelques points à connaître.</p>
+
+            <h3>Le droit à la déconnexion</h3>
+            <p>Le salarié en télétravail a le droit de se déconnecter en dehors de ses horaires de travail. Ce droit doit être prévu par accord d'entreprise ou charte. L'absence de réponse hors des horaires convenus ne peut pas constituer un manquement professionnel.</p>
+
+            <h3>La prise en charge des frais</h3>
+            <p>L'employeur a l'obligation de prendre en charge les coûts liés au télétravail. Les modalités varient selon les entreprises et les accords en vigueur. Vérifiez ce qui est prévu dans votre accord ou charte de télétravail.</p>
+
+            <h3>L'égalité de traitement</h3>
+            <p>Un salarié en télétravail doit bénéficier des mêmes droits que ses collègues en présentiel : accès à la formation, évolution de carrière, entretiens annuels, accès aux informations de l'entreprise.</p>
+
+            <h3>La surveillance encadrée</h3>
+            <p>Les outils de surveillance à distance doivent être proportionnés, déclarés auprès de la CNIL si nécessaire, et les salariés doivent en être informés. Une surveillance disproportionnée peut constituer une atteinte à la vie privée.</p>
+
+            <h2>En résumé</h2>
+
+            <div class="resume-box">
+              <h3>Ce qui change avec le télétravail</h3>
+              <ol>
+                <li><strong>L'isolement devient invisible</strong> : il se produit sans témoin, dans les outils numériques</li>
+                <li><strong>Les échanges laissent plus de traces</strong> : utilisez-le pour documenter, soyez vigilant sur ce que vous écrivez</li>
+                <li><strong>La surveillance peut s'intensifier</strong> : vérifiez ce qui est prévu dans votre accord de télétravail</li>
+                <li><strong>Les reproches portent souvent sur la disponibilité</strong> : le droit à la déconnexion vous protège hors des horaires convenus</li>
+                <li><strong>Vos droits restent les mêmes</strong> : égalité de traitement, formation, évolution de carrière</li>
+              </ol>
+            </div>
+
+            <div class="next-article-teaser">
+              <span class="teaser-label">Prochainement</span>
+              <span class="teaser-title">Inaptitude au travail : que se passe-t-il après l'avis du médecin</span>
+            </div>
+
+            <div class="article-tags">
+              <span class="article-tag">Télétravail</span>
+              <span class="article-tag">Conflits RH</span>
+              <span class="article-tag">Droit à la déconnexion</span>
+              <span class="article-tag">Droit du travail</span>
+              <span class="article-tag">Surveillance au travail</span>
+            </div>
+
+          </article>
+
+          <aside class="article-sidebar">
+            <div class="sidebar-card" id="tocCard">
+              <h3>Dans cet article</h3>
+              <ul class="toc-list" id="tocList"></ul>
+            </div>
+            <div class="sidebar-card" style="background: var(--primary); border-color: var(--primary);">
+              <h3 style="color:#fff;">Votre situation nécessite un appui ?</h3>
+              <p style="color: rgba(255,255,255,0.75);">Premier échange gratuit, confidentiel, sans engagement.</p>
+              <a href="https://calendly.com/fabrice-zamia/30min" target="_blank" rel="noopener" class="btn btn-primary" style="background:#fff; color:var(--primary); width:100%; text-align:center; justify-content:center;">Prendre rendez-vous</a>
+            </div>
+            <div class="sidebar-card">
+              <h3>À propos de l'auteur</h3>
+              <p>Fabrice Zamia accompagne les salariés en situation professionnelle difficile. Coach certifié, diplômé d'un master RH avec dominante en droit social.</p>
+              <a href="../index.html#apropos" class="btn btn-secondary" style="width:100%; justify-content:center; font-size:0.82rem;">En savoir plus</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="related-section">
+      <div class="container">
+        <h2>Articles connexes</h2>
+        <div class="related-grid">
+          <a href="./pression-travail-constituer-dossier.html" class="related-card">
+            <span class="related-card-cat">Harcèlement moral</span>
+            <h3>Pression au travail : comment constituer un dossier</h3>
+            <span class="related-card-link">Lire l'article →</span>
+          </a>
+          <a href="./5-signes-situation-professionnelle-se-degrade.html" class="related-card">
+            <span class="related-card-cat">Conseils pratiques</span>
+            <h3>5 signes que votre situation professionnelle se dégrade</h3>
+            <span class="related-card-link">Lire l'article →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <div class="brand-mark">AR</div>
+          <div>
+            <strong>Avant Recours</strong>
+            <small>Le premier réflexe avant d'aller plus loin</small>
+          </div>
+        </div>
+        <p class="footer-desc">Cabinet individuel basé à Compiègne. Accompagnement des salariés en situation professionnelle difficile, en amont du contentieux.</p>
+      </div>
+      <div>
+        <p class="footer-heading">Navigation</p>
+        <ul class="footer-links">
+          <li><a href="../index.html#prestations">Prestations</a></li>
+          <li><a href="../index.html#methode">Méthode</a></li>
+          <li><a href="../index.html#apropos">À propos</a></li>
+          <li><a href="./index.html">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Contact</p>
+        <ul class="footer-links">
+          <li><a href="mailto:contact@avantrecours.fr">contact@avantrecours.fr</a></li>
+          <li><a href="tel:+33671592159">06 71 59 21 59</a></li>
+          <li><a href="https://calendly.com/fabrice-zamia/30min" target="_blank" rel="noopener">Prendre rendez-vous</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Avant Recours — Fabrice Zamia. Tous droits réservés.</span>
+      <span>
+        <a href="../mentions-legales.html" style="color:rgba(255,255,255,0.5); text-decoration:underline;">Mentions légales</a>
+        &nbsp;·&nbsp;Le cabinet intervient en accompagnement et coaching. Il ne délivre pas de consultation juridique individualisée.
+      </span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.getElementById('navToggle');
+    const menu = document.getElementById('navMenu');
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+    (function buildToc() {
+      const headings = document.querySelectorAll('#articleContent h2');
+      const tocList = document.getElementById('tocList');
+      const tocCard = document.getElementById('tocCard');
+      if (headings.length < 2) { tocCard.style.display = 'none'; return; }
+      headings.forEach((h, i) => {
+        const id = 'section-' + i;
+        h.setAttribute('id', id);
+        const li = document.createElement('li');
+        li.innerHTML = `<a href="#${id}">${h.textContent}</a>`;
+        tocList.appendChild(li);
+      });
+    })();
+  </script>
+</body>
+</html>
