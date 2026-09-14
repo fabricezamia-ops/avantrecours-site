@@ -156,14 +156,14 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-   <!-- Articles a paraitre -->
-  <!--
   <url>
     <loc>https://www.avantrecours.fr/blog/teletravail-conflits-rh.html</loc>
     <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+   <!-- Articles a paraitre -->
+  <!--
   <url>
     <loc>https://www.avantrecours.fr/blog/inaptitude-travail-avis-medecin.html</loc>
     <lastmod>2026-09-22</lastmod>
