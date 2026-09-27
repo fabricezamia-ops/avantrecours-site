@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clause de non-concurrence : ce que vous devez savoir | Avant Recours</title>
+  <meta name="description" content="Votre contrat contient une clause de non-concurrence ? Voici ce qu'elle implique concrètement, les conditions de validité et ce que vous pouvez faire." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.avantrecours.fr/blog/clause-non-concurrence.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.avantrecours.fr/blog/clause-non-concurrence.html" />
+  <meta property="og:title" content="Clause de non-concurrence : ce que vous devez savoir | Avant Recours" />
+  <meta property="og:description" content="Votre contrat contient une clause de non-concurrence ? Voici ce qu'elle implique concrètement, les conditions de validité et ce que vous pouvez faire." />
+  <meta property="og:locale" content="fr_FR" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Clause de non-concurrence : ce que vous devez savoir",
+    "description": "Votre contrat contient une clause de non-concurrence ? Voici ce qu'elle implique concrètement, les conditions de validité et ce que vous pouvez faire.",
+    "datePublished": "2026-09-28",
+    "author": { "@type": "Person", "name": "Fabrice Zamia" },
+    "publisher": { "@type": "Organization", "name": "Avant Recours", "url": "https://www.avantrecours.fr" },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.avantrecours.fr/blog/clause-non-concurrence.html" }
+  }
+  </script>
+  <link rel="icon" type="image/png" href="../avant-recours-favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .article-hero { background: linear-gradient(180deg, #f4f7fb 0%, #ffffff 100%); padding: 4.5rem 0 3rem; border-bottom: 1px solid var(--line-soft); }
+    .article-breadcrumb { font-size: 0.82rem; color: var(--muted); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem; }
+    .article-breadcrumb a { color: var(--primary-2); font-weight: 500; }
+    .article-breadcrumb a:hover { text-decoration: underline; }
+    .article-hero-meta { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem; flex-wrap: wrap; }
+    .article-cat-badge { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--primary-2); background: var(--primary-light); padding: 0.3rem 0.75rem; border-radius: 999px; }
+    .article-date-badge, .article-reading-time { font-size: 0.82rem; color: var(--muted); }
+    .article-hero h1 { font-style: italic; font-size: clamp(1.8rem, 3.5vw, 3rem); max-width: 24ch; margin-bottom: 1.25rem; }
+    .article-hero .article-intro { font-size: 1.1rem; color: var(--muted); max-width: 60ch; line-height: 1.65; margin: 0; }
+    .article-author { display: flex; align-items: center; gap: 1rem; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--line-soft); }
+    .author-avatar { width: 44px; height: 44px; border-radius: 50%; overflow: hidden; border: 2px solid var(--line); flex-shrink: 0; }
+    .author-avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .author-info strong { display: block; font-size: 0.9rem; color: var(--primary); font-weight: 600; }
+    .author-info span { font-size: 0.82rem; color: var(--muted); }
+    .article-layout { padding: 4rem 0 6rem; }
+    .article-grid { display: grid; grid-template-columns: 1fr 320px; gap: 4rem; align-items: start; }
+    .article-content { font-size: 1rem; line-height: 1.8; color: var(--text); }
+    .article-content h2 { font-size: 1.6rem; margin: 2.5rem 0 1rem; font-style: italic; color: var(--primary); }
+    .article-content h3 { font-size: 1.15rem; margin: 2rem 0 0.75rem; color: var(--primary); }
+    .article-content p { margin-bottom: 1.25rem; color: #3a4250; }
+    .article-content ul, .article-content ol { margin: 1rem 0 1.5rem; padding-left: 0; list-style: none; }
+    .article-content ul li, .article-content ol li { padding: 0.5rem 0 0.5rem 1.5rem; border-bottom: 1px solid var(--line-soft); font-size: 0.95rem; color: var(--muted); position: relative; }
+    .article-content ul li:last-child, .article-content ol li:last-child { border-bottom: none; }
+    .article-content ul li::before { content: '→'; position: absolute; left: 0; color: var(--primary-2); font-size: 0.85rem; }
+    .article-content ol { counter-reset: ol-counter; }
+    .article-content ol li { counter-increment: ol-counter; }
+    .article-content ol li::before { content: counter(ol-counter) '.'; position: absolute; left: 0; color: var(--primary-2); font-size: 0.85rem; font-weight: 700; }
+    .article-content blockquote { border-left: 3px solid var(--primary-2); background: var(--primary-light); padding: 1.25rem 1.5rem; border-radius: 0 var(--radius) var(--radius) 0; margin: 1.75rem 0; font-family: var(--font-display); font-size: 1.1rem; font-style: italic; color: var(--primary); line-height: 1.5; }
+    .article-content strong { color: var(--primary); font-weight: 600; }
+    .info-block { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 1.75rem 2rem; margin: 1.5rem 0; box-shadow: var(--shadow-soft); position: relative; }
+    .info-block::before { content: ''; position: absolute; top: 0; left: 0; bottom: 0; width: 4px; background: var(--primary-2); border-radius: 4px 0 0 4px; }
+    .info-block h3 { margin: 0 0 0.75rem; font-size: 1.1rem; }
+    .info-block p { margin-bottom: 0.75rem; font-size: 0.95rem; color: var(--muted); }
+    .info-block p:last-child { margin-bottom: 0; }
+    .warning-block { background: #FBF3F0; border: 1px solid #E8C9BD; border-radius: var(--radius-lg); padding: 1.75rem 2rem; margin: 2rem 0; position: relative; }
+    .warning-block::before { content: ''; position: absolute; top: 0; left: 0; bottom: 0; width: 4px; background: #b0637a; border-radius: 4px 0 0 4px; }
+    .warning-block h3 { margin: 0 0 0.75rem; font-size: 1.05rem; color: #8a4a5a; }
+    .warning-block p { margin: 0; font-size: 0.92rem; color: #6b4048; }
+    .article-cta-box { background: var(--primary); border-radius: var(--radius-lg); padding: 2rem; margin: 2.5rem 0; text-align: center; }
+    .article-cta-box p { color: rgba(255,255,255,0.85) !important; font-size: 1rem; margin-bottom: 1.25rem; }
+    .article-cta-box strong { color: #fff !important; }
+    .article-cta-box .btn-primary { background: #fff; color: var(--primary); }
+    .article-sidebar { position: sticky; top: 96px; display: flex; flex-direction: column; gap: 1.5rem; }
+    .sidebar-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: var(--shadow-soft); }
+    .sidebar-card h3 { font-size: 1rem; margin-bottom: 1rem; color: var(--primary); }
+    .sidebar-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.6; margin-bottom: 1rem; }
+    .toc-list { list-style: none; padding: 0; margin: 0; }
+    .toc-list li { border-bottom: 1px solid var(--line-soft); }
+    .toc-list li:last-child { border-bottom: none; }
+    .toc-list a { display: block; padding: 0.5rem 0; font-size: 0.85rem; color: var(--muted); font-weight: 500; transition: color .2s; }
+    .toc-list a:hover { color: var(--primary); }
+    .article-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--line-soft); }
+    .article-tag { font-size: 0.78rem; font-weight: 600; color: var(--muted); background: var(--bg-soft); border: 1px solid var(--line); padding: 0.3rem 0.75rem; border-radius: 999px; }
+    .resume-box { background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 1.75rem 2rem; margin: 2.5rem 0; }
+    .resume-box h3 { margin-bottom: 1rem; font-size: 1.1rem; }
+    .next-article-teaser { border-top: 1px solid var(--line-soft); margin-top: 3rem; padding-top: 1.75rem; }
+    .next-article-teaser .teaser-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 0.5rem; }
+    .next-article-teaser .teaser-title { font-family: var(--font-display); font-size: 1.2rem; font-style: italic; color: var(--primary); font-weight: 600; }
+    .related-section { padding: 4rem 0; background: var(--bg); border-top: 1px solid var(--line-soft); }
+    .related-section h2 { font-size: 1.5rem; margin-bottom: 1.75rem; }
+    .related-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+    .related-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: var(--shadow-soft); text-decoration: none; color: inherit; transition: box-shadow .25s, transform .25s; display: flex; flex-direction: column; gap: 0.5rem; }
+    .related-card:hover { box-shadow: var(--shadow); transform: translateY(-3px); color: inherit; }
+    .related-card-cat { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--primary-2); }
+    .related-card h3 { font-size: 1rem; color: var(--primary); margin: 0; }
+    .related-card-link { font-size: 0.82rem; font-weight: 600; color: var(--primary-2); margin-top: auto; }
+    @media (max-width: 1020px) { .article-grid { grid-template-columns: 1fr; } .article-sidebar { position: static; } .related-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 768px) { .article-hero { padding: 3rem 0 2rem; } }
+  </style>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a href="../index.html" class="brand">
+        <div class="brand-mark">AR</div>
+        <div>
+          <strong>Avant Recours</strong>
+          <small>Le premier réflexe avant d'aller plus loin</small>
+        </div>
+      </a>
+      <nav class="nav-menu" id="navMenu" aria-label="Navigation principale">
+        <a href="../index.html#prestations">Prestations</a>
+        <a href="../index.html#methode">Méthode</a>
+        <a href="../index.html#apropos">À propos</a>
+        <a href="../index.html#faq">FAQ</a>
+        <a href="./index.html" style="color: var(--primary); font-weight:600;">Blog</a>
+        <a href="https://calendly.com/fabrice-zamia/30min" target="_blank" rel="noopener" class="nav-cta">Prendre rendez-vous</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="article-hero">
+      <div class="container narrow">
+        <nav class="article-breadcrumb" aria-label="Fil d'ariane">
+          <a href="../index.html">Accueil</a>
+          <span>›</span>
+          <a href="./index.html">Blog</a>
+          <span>›</span>
+          <span>Conseils pratiques</span>
+        </nav>
+        <div class="article-hero-meta">
+          <span class="article-cat-badge">Conseils pratiques</span>
+          <span class="article-date-badge">28 septembre 2026</span>
+          <span class="article-reading-time">7 min de lecture</span>
+        </div>
+        <h1>Clause de non-concurrence : ce que vous devez savoir</h1>
+        <p class="article-intro">Votre contrat contient une clause de non-concurrence. Voici ce qu'elle implique concrètement, ce que l'employeur doit respecter et ce que vous pouvez faire.</p>
+        <div class="article-author">
+          <div class="author-avatar">
+            <img src="../fabrice-zamia.jpg" alt="Fabrice Zamia" />
+          </div>
+          <div class="author-info">
+            <strong>Fabrice Zamia</strong>
+            <span>Conseil en relations sociales — Avant Recours</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-layout">
+      <div class="container">
+        <div class="article-grid">
+          <article class="article-content" id="articleContent">
+
+            <p>Beaucoup de salariés découvrent qu'ils ont une clause de non-concurrence dans leur contrat au moment de leur départ de l'entreprise. Parfois au moment de signer un autre contrat. Parfois quand l'employeur leur rappelle qu'elle existe.</p>
+            <p>Ce que cette clause implique n'est pas toujours clair. Cet article présente les points essentiels à connaître. Il ne constitue pas une consultation juridique — chaque situation étant différente, un avocat en droit du travail reste l'interlocuteur adapté pour évaluer votre cas précis.</p>
+
+            <h2>Qu'est-ce qu'une clause de non-concurrence</h2>
+
+            <p>Une clause de non-concurrence est une disposition insérée dans le contrat de travail — ou parfois dans une convention collective — qui interdit au salarié, après la fin de son contrat, d'exercer certaines activités susceptibles de concurrencer son ancien employeur.</p>
+            <p>Elle prend effet à la rupture du contrat, quelle qu'en soit la cause : démission, licenciement, rupture conventionnelle. Elle ne s'applique pas pendant l'exécution du contrat — pendant cette période, c'est l'obligation de loyauté qui régit la relation.</p>
+            <p>Son objet est de protéger les intérêts légitimes de l'entreprise : clientèle, savoir-faire spécifique, informations sensibles. Mais pour être valide, elle doit respecter des conditions précises que la jurisprudence a progressivement définies.</p>
+
+            <blockquote>Une clause de non-concurrence ne devient contraignante qu'à la rupture du contrat. Et elle n'est valide qu'à condition de respecter quatre critères cumulatifs.</blockquote>
+
+            <h2>Les quatre conditions de validité</h2>
+
+            <p>La Cour de cassation a posé quatre conditions cumulatives. L'absence d'une seule suffit à rendre la clause nulle.</p>
+
+            <div class="info-block">
+              <h3>1. Un intérêt légitime à protéger</h3>
+              <p>L'employeur doit pouvoir justifier que la clause protège un intérêt réel de l'entreprise. Cela suppose que le salarié ait accès à des éléments sensibles : clientèle identifiée, procédés techniques non publics, stratégies commerciales. Une clause imposée à tous les salariés sans distinction de poste ou d'accès à l'information risque d'être contestée sur ce point.</p>
+            </div>
+
+            <div class="info-block">
+              <h3>2. Une limitation dans le temps</h3>
+              <p>La clause doit prévoir une durée précise. Il n'existe pas de durée légale maximale fixée par le Code du travail, mais la jurisprudence sanctionne les durées disproportionnées. Dans la pratique, on rencontre le plus souvent des durées comprises entre six mois et deux ans. Certaines conventions collectives encadrent cette durée — il faut vérifier celle qui s'applique à votre secteur.</p>
+            </div>
+
+            <div class="info-block">
+              <h3>3. Une limitation géographique</h3>
+              <p>La clause doit délimiter un périmètre géographique précis : un département, une région, un territoire national, un périmètre européen. Une clause sans délimitation géographique ou avec une délimitation trop large par rapport à l'activité réelle du salarié peut être déclarée nulle ou réduite par le juge.</p>
+            </div>
+
+            <div class="info-block">
+              <h3>4. Une contrepartie financière</h3>
+              <p>C'est la condition la plus souvent méconnue. Une clause de non-concurrence est obligatoirement assortie d'une contrepartie financière versée par l'employeur pendant toute la durée de la restriction. Sans contrepartie — ou avec une contrepartie dérisoire — la clause est nulle. Vous êtes alors libre de l'ignorer sans risque.</p>
+            </div>
+
+            <h2>Ce qui se passe à la rupture du contrat</h2>
+
+            <h3>L'employeur peut renoncer à la clause</h3>
+            <p>Dans la grande majorité des cas, l'employeur a la possibilité de renoncer à appliquer la clause de non-concurrence. En le faisant, il vous libère de la restriction et n'a plus à verser la contrepartie financière. Mais cette renonciation doit intervenir dans les délais prévus par le contrat ou la convention collective — souvent dans les jours qui suivent la notification de la rupture. Une renonciation tardive peut être contestée.</p>
+            <p>Si l'employeur renonce à la clause, il doit le faire par écrit. Conservez ce document.</p>
+
+            <h3>L'employeur maintient la clause</h3>
+            <p>Si l'employeur choisit de maintenir la clause, il est tenu de verser la contrepartie financière pendant toute la durée de la restriction. Ce versement est généralement mensuel. Il prend la forme d'un complément de salaire ou d'une indemnité distincte, selon ce que prévoit le contrat.</p>
+            <p>Si l'employeur maintient la clause mais cesse de verser la contrepartie, il commet une faute. Dans ce cas, vous pouvez vous considérer libéré de la restriction et réclamer le versement des sommes dues. Ce point mérite l'avis d'un avocat pour évaluer la marche à suivre.</p>
+
+            <div class="warning-block">
+              <h3>Violer une clause valide expose à des risques réels</h3>
+              <p>Si vous exercez une activité interdite par une clause valide et toujours en vigueur, votre ancien employeur peut agir en justice pour obtenir l'arrêt de l'activité et des dommages et intérêts. Il peut également obtenir le remboursement de la contrepartie financière versée. Ces risques sont réels et doivent être évalués avant toute prise de décision.</p>
+            </div>
+
+            <h2>Ce que vous pouvez contester</h2>
+
+            <h3>La validité de la clause elle-même</h3>
+            <p>Si l'une des quatre conditions de validité n'est pas remplie, la clause est nulle. Vous pouvez demander au Conseil de Prud'hommes de constater cette nullité. En pratique, les motifs les plus fréquents de nullité sont l'absence de contrepartie financière, une contrepartie dérisoire, ou une absence de limitation géographique précise.</p>
+
+            <h3>Le caractère disproportionné</h3>
+            <p>Même si la clause est valide en principe, le juge peut la réduire si elle est disproportionnée par rapport à l'intérêt légitime qu'elle prétend protéger. Il peut réduire la durée, le périmètre géographique, ou le champ des activités interdites. C'est ce qu'on appelle le pouvoir de modération du juge.</p>
+
+            <h3>Le non-versement de la contrepartie</h3>
+            <p>Si l'employeur maintient la clause mais ne verse pas la contrepartie, vous pouvez agir en justice pour obtenir le paiement des sommes dues, et éventuellement vous faire reconnaître libéré de la restriction. Ce type de situation justifie une prise de contact rapide avec un professionnel du droit du travail.</p>
+
+            <div class="article-cta-box">
+              <p><strong>Votre contrat contient une clause de non-concurrence et vous ne savez pas si elle est valide ou comment elle s'applique à votre situation ?</strong><br>Un premier échange permet d'identifier les points à examiner avant de prendre une décision.</p>
+              <a href="https://calendly.com/fabrice-zamia/30min" target="_blank" rel="noopener" class="btn btn-primary">Prendre rendez-vous — premier échange gratuit</a>
+            </div>
+
+            <h2>Ce que vous pouvez faire concrètement</h2>
+
+            <h3>Relire votre clause attentivement</h3>
+            <p>Retrouvez la clause dans votre contrat et identifiez ce qu'elle prévoit exactement : durée, périmètre géographique, activités interdites, montant de la contrepartie, conditions de renonciation. Si votre poste est régi par une convention collective, vérifiez si celle-ci contient des dispositions spécifiques sur ce point.</p>
+
+            <h3>Vérifier si l'employeur a renoncé ou non</h3>
+            <p>À la rupture de votre contrat, l'employeur doit vous informer de sa décision — maintien ou renonciation — dans le délai prévu. Si vous n'avez reçu aucun document sur ce point, interrogez-le par écrit et conservez la réponse. L'absence de réponse peut avoir des conséquences sur l'application de la clause.</p>
+
+            <h3>Vérifier les versements</h3>
+            <p>Si la clause est maintenue, contrôlez que la contrepartie financière est bien versée chaque mois. Gardez les justificatifs. Tout arrêt ou retard de paiement doit être signalé rapidement.</p>
+
+            <h3>Consulter un avocat avant de prendre une décision</h3>
+            <p>Avant d'accepter un nouveau poste, de lancer une activité, ou de décider d'ignorer une clause, demandez l'avis d'un avocat en droit du travail. Il pourra évaluer la validité de la clause, les risques réels et la stratégie à adopter. Ce type de consultation est souvent rapide et peut éviter des conséquences coûteuses.</p>
+
+            <h2>En résumé</h2>
+
+            <div class="resume-box">
+              <h3>Ce qu'il faut retenir</h3>
+              <ol>
+                <li><strong>Une clause de non-concurrence ne s'applique qu'après la rupture du contrat</strong> et doit réunir quatre conditions cumulatives pour être valide</li>
+                <li><strong>Sans contrepartie financière, la clause est nulle</strong> — c'est le motif de nullité le plus fréquent</li>
+                <li><strong>L'employeur peut renoncer à la clause</strong>, mais doit le faire dans les délais prévus et par écrit</li>
+                <li><strong>Si la clause est maintenue, la contrepartie doit être versée chaque mois</strong> — l'arrêt des versements peut vous libérer de la restriction</li>
+                <li><strong>Avant toute décision professionnelle impliquant cette clause</strong>, consulter un avocat en droit du travail est fortement recommandé</li>
+              </ol>
+            </div>
+
+            <div class="next-article-teaser">
+              <span class="teaser-label">Prochainement</span>
+              <span class="teaser-title">Rupture conventionnelle : les points à vérifier avant de signer</span>
+            </div>
+
+            <div class="article-tags">
+              <span class="article-tag">Clause de non-concurrence</span>
+              <span class="article-tag">Contrat de travail</span>
+              <span class="article-tag">Rupture du contrat</span>
+              <span class="article-tag">Droit du travail</span>
+              <span class="article-tag">Conseils pratiques</span>
+            </div>
+
+          </article>
+
+          <aside class="article-sidebar">
+            <div class="sidebar-card" id="tocCard">
+              <h3>Dans cet article</h3>
+              <ul class="toc-list" id="tocList"></ul>
+            </div>
+            <div class="sidebar-card" style="background: var(--primary); border-color: var(--primary);">
+              <h3 style="color:#fff;">Votre situation nécessite un appui ?</h3>
+              <p style="color: rgba(255,255,255,0.75);">Premier échange gratuit, confidentiel, sans engagement.</p>
+              <a href="https://calendly.com/fabrice-zamia/30min" target="_blank" rel="noopener" class="btn btn-primary" style="background:#fff; color:var(--primary); width:100%; text-align:center; justify-content:center;">Prendre rendez-vous</a>
+            </div>
+            <div class="sidebar-card">
+              <h3>À propos de l'auteur</h3>
+              <p>Fabrice Zamia accompagne les salariés en situation professionnelle difficile. Coach certifié, diplômé d'un master RH avec dominante en droit social.</p>
+              <a href="../index.html#apropos" class="btn btn-secondary" style="width:100%; justify-content:center; font-size:0.82rem;">En savoir plus</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="related-section">
+      <div class="container">
+        <h2>Articles connexes</h2>
+        <div class="related-grid">
+          <a href="./inaptitude-travail-avis-medecin.html" class="related-card">
+            <span class="related-card-cat">Conseils pratiques</span>
+            <h3>Inaptitude au travail : que se passe-t-il après l'avis du médecin</h3>
+            <span class="related-card-link">Lire l'article →</span>
+          </a>
+          <a href="./3-erreurs-apres-convocation-entretien-prealable.html" class="related-card">
+            <span class="related-card-cat">Convocation &amp; entretien RH</span>
+            <h3>3 erreurs à éviter après une convocation à un entretien préalable</h3>
+            <span class="related-card-link">Lire l'article →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <div class="brand-mark">AR</div>
+          <div>
+            <strong>Avant Recours</strong>
+            <small>Le premier réflexe avant d'aller plus loin</small>
+          </div>
+        </div>
+        <p class="footer-desc">Cabinet individuel basé à Compiègne. Accompagnement des salariés en situation professionnelle difficile dans l'Oise et partout en France, en amont du contentieux.</p>
+      </div>
+      <div>
+        <p class="footer-heading">Navigation</p>
+        <ul class="footer-links">
+          <li><a href="../index.html#prestations">Prestations</a></li>
+          <li><a href="../index.html#methode">Méthode</a></li>
+          <li><a href="../index.html#apropos">À propos</a></li>
+          <li><a href="./index.html">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Contact</p>
+        <ul class="footer-links">
+          <li><a href="mailto:contact@avantrecours.fr">contact@avantrecours.fr</a></li>
+          <li><a href="tel:+33671592159">06 71 59 21 59</a></li>
+          <li><a href="https://calendly.com/fabrice-zamia/30min" target="_blank" rel="noopener">Prendre rendez-vous</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Avant Recours — Fabrice Zamia. Tous droits réservés.</span>
+      <span>
+        <a href="../mentions-legales.html" style="color:rgba(255,255,255,0.5); text-decoration:underline;">Mentions légales</a>
+        &nbsp;·&nbsp;Le cabinet intervient en accompagnement et coaching. Il ne délivre pas de consultation juridique individualisée.
+      </span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.getElementById('navToggle');
+    const menu = document.getElementById('navMenu');
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+    (function buildToc() {
+      const headings = document.querySelectorAll('#articleContent h2');
+      const tocList = document.getElementById('tocList');
+      const tocCard = document.getElementById('tocCard');
+      if (headings.length < 2) { tocCard.style.display = 'none'; return; }
+      headings.forEach((h, i) => {
+        const id = 'section-' + i;
+        h.setAttribute('id', id);
+        const li = document.createElement('li');
+        li.innerHTML = `<a href="#${id}">${h.textContent}</a>`;
+        tocList.appendChild(li);
+      });
+    })();
+  </script>
+</body>
+</html>
