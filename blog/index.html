@@ -678,9 +678,10 @@
 
     function renderArticles(filter = 'all') {
       const grid = document.getElementById('blogGrid');
-      const filtered = filter === 'all'
+      const filtered = (filter === 'all'
         ? articles
-        : articles.filter(a => a.categorie === filter);
+        : articles.filter(a => a.categorie === filter)
+      ).slice().reverse();
 
       if (filtered.length === 0) {
         grid.innerHTML = '<div class="blog-empty"><p>Aucun article dans cette catégorie pour le moment.</p></div>';
